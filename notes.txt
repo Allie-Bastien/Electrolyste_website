@@ -1,0 +1,46 @@
+Main - Prise de rendez vous
+
+maintenant a montréal , besoin de créer une nouvelle clientèle
+
+Est ce qu'elle utilise un système en particulier pour gérer ses rdv?
+Google calendar
+être capable de changer dispo facilement
+
+Est ce qu'elle serait intéressé à a voir une page/ section contact?
+Oui
+
+Centré sur épilation electrolyse
+
+
+
+
+Menu d/roulant avec les options "contact" et "prendre un RDV", les formulaires sont trouvable sur la page principale mais le menu permet d'ouvrir une nouvelle page contenant seulement 
+le dit formulaires
+
+
+FORMAT PAGE 
+
+Pascale Legault, electrolyse                                Menu
+            IMAGE principale
+
+(    
+
+Explication de lepilation par electrolyse
+
+)
+
+(
+images du studio
+
+)
+
+(
+
+Explication des services offect par pascale
+
+)
+
+Section Prise de RDV
+
+Section Contact
+        
