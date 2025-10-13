@@ -16,6 +16,21 @@
   font-family: var(--font-geist-sans);
 }
 
+.container {
+  position: relative;
+  right: 30px;
+  align-self: center;
+  display: block;
+  max-width: var(--max-width);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  width: max-content;
+  background-color: white;
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
@@ -27,11 +42,44 @@
   }
 }
 
+.title h1 {
+  position: relative;
+  left: 50%;
+  font-size: 32px;
+  align-self: center;
+  color: var(--color-dark);
+  font-family: var(--font-roboto);
+  font-weight: 700;
+}
+
+.logo {
+  align-self: center;
+  height: 350px;
+  width: 900px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: max-content;
+}
+
+.image {
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  width: 300px;
+  margin: 50px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  max-width: 80%;
 }
 
 .main ol {

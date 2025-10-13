@@ -1,0 +1,38 @@
+.boutonMenu {
+    position: absolute;
+    right: 150px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    user-select: none;
+    padding : 10px;
+}
+
+.boutonMenu:hover {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+}
+
+.menu {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    margin-top: 0.5rem;
+    width: 12rem;
+    background-color: white;
+    border: 1px solid #e5e7eb; /* Tailwind's gray-200 */
+    border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+    z-index: 1000;
+}
+
+.menuItem {
+    display: block;
+    padding: 0.75rem 1rem; /* Tailwind's px-4 py-2 */
+    text-decoration: none;
+    color: black;
+    user-select: none;
+}
