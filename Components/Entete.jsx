@@ -11,8 +11,8 @@ export default function Entete() {
     <div className={styles.header}>
       <div className={styles.headerContent}>
         <div className={styles.logoContainer}>
-          <img src="LogoClarea.png" width={90} height={90} />
-          <img src="clarea.png" width={200} height={50} />
+          <img alt="Logo" src="LogoClarea.png" className={styles.Logo}/>
+          <img alt="clarea" src="clarea.png" className={styles.logotexte}/>
         </div>
         <Menu />
         </div>

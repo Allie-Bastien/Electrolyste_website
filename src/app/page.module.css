@@ -138,10 +138,13 @@
   align-self: center;
   height: 350px;
   width: 250px;
-  margin-left: 200px;
 }
 
 @media (max-width: 800px) {
+  
+  .subtitle2{
+    border-radius: none;
+  }
   .section1 {
     flex-direction: column;
   }
@@ -151,9 +154,9 @@
   }
   .logo {
     height: 300px;
-    width: 200px;
-    margin-left: 0px;
   }
+
+
   .container,
   .containerRdv,
   .paragraphType1 {
@@ -203,7 +206,6 @@
   grid-row-start: 2;
   max-width: 100%;
   background-color: f7ebd7;
-  left: 200px;
 }
 
 .main ol {
@@ -446,7 +448,11 @@ a.secondary {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  } 
+}
+@media (max-width: 768px) {
+  .event-card {
+    width: 100%;
   }
 }
-
 

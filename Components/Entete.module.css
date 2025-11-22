@@ -15,7 +15,15 @@
     flex-direction: column;
     padding: 10px
 }
-
+.Logo{
+  height: 90px;
+  width: 90px;
+}
+.logotexte{
+  height: 50px;
+  width: 200px;
+  margin-top: 10px;
+}
 .titles{
   display: flex;
   flex-direction: column;
@@ -61,7 +69,15 @@
     margin-top: -90px;
     margin-bottom: 0;
   }
-
+  .Logo{
+    height: 70px;
+    width: 70px;
+  }
+  .logotexte{
+    height: 40px;
+    width: 160px;
+    margin-top: 5px;
+  }
   .title {
     font-size: 1.5rem;
   }
