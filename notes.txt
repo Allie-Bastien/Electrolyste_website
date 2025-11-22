@@ -8,6 +8,7 @@ Google calendar
 
 
 Voudrait elle un version anglais du site?
+oui
 
 
 
@@ -42,3 +43,20 @@ Section Prise de RDV
 
 Section Contact
         
+
+
+
+
+       
+
+
+pouvoir décider le type de rdv (consultation, electrolyse, laser) nécissite un mdp pour choisir laser et electrolyse
+
+db pour les infos de clients
+
+possibilité d'annulation
+
+demande de feedback post rdv pour ajouter a la bd (possiblement a une section review si jamais)
+
+
+animation de scrolling lors de clic sur le menu

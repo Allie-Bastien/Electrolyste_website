@@ -1,38 +1,77 @@
 .boutonMenu {
-    position: absolute;
-    right: 150px;
-    width: 80px;
-    height: 80px;
+    background-color: white;
+    width: 120px;
+    height: 100px;
     cursor: pointer;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     user-select: none;
     padding : 10px;
 }
 
 .boutonMenu:hover {
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
     transition: transform 0.2s ease;
 }
 
 .menu {
     position: absolute;
-    top: 100px;
-    right: 100px;
+    top: 142px;
+    right: 0px;
     margin-top: 0.5rem;
-    width: 12rem;
-    background-color: white;
-    border: 1px solid #e5e7eb; /* Tailwind's gray-200 */
-    border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    width: 18rem;
+    height: 25rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: #9EBFA4;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
     z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(18rem);
+    transition:
+        transform 0.3s ease-in-out,
+        opacity 0s 0.3s;
+    pointer-events: auto;
 }
+
+.open {
+    position: absolute;
+    top: 142px;
+    right: 0px;
+    margin-top: 0.5rem;
+    width: 18rem;
+    height: 25rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: #9EBFA4;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+    z-index: 1000;
+    opacity: 1;
+    transform: translateX(0rem);
+    pointer-events: auto;
+    transition:
+        opacity 0s,
+        transform 0.3s ease-in-out;
+}
+
 
 .menuItem {
     display: block;
     padding: 0.75rem 1rem; /* Tailwind's px-4 py-2 */
     text-decoration: none;
-    color: black;
+    color: white;
     user-select: none;
+}
+
+
+@media (max-width: 700px) {
+    .menu {
+        width: 18rem;
+        height: 20rem;
+        top: 112px;
+    }
+
+    .open {
+        width: 18rem;
+        height: 20rem;
+        top: 112px;
+    }
 }
