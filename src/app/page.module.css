@@ -323,12 +323,17 @@
 
 .quote {
   color: dimgray;
-  padding: 30px;
+  padding-top: 30px;
+  padding-right: 5px
 }
 .quoteBold {
   color: dimgray;
-  padding: 30px;
+  padding-top: 30px;
   font-weight: bold;
+}
+.quoteContainer {
+  display: flex;
+  flex-direction: row;
 }
 .liste {
   color: dimgray;
