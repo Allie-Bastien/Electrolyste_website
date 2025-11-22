@@ -458,25 +458,4 @@ a.secondary {
   }
 }
 
-/* Responsiveness for mobile devices */
-@media (max-width: 768px) {
-  .about-container {
-    grid-template-columns: 1fr; /* Passe à une seule colonne */
-    gap: 20px;
-  }
 
-  .about-text {
-    text-align: center; /* Aligne le texte au centre pour mobile */
-  }
-
-  .about-button {
-    margin: 0 auto; /* Centre le bouton */
-  }
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .event-card {
-    width: 100%;
-  }
-}
