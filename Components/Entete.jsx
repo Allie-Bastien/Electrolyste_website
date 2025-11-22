@@ -12,7 +12,7 @@ export default function Entete() {
       <div className={styles.headerContent}>
         <div className={styles.logoContainer}>
           <img src="LogoClarea.png" width={90} height={90} />
-          <img src="Clarea.png" width={200} height={50} />
+          <img src="clarea.png" width={200} height={50} />
         </div>
         <Menu />
         </div>
