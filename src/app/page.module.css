@@ -154,20 +154,6 @@
     width: 200px;
     margin-left: 0px;
   }
- .page {
-    padding: 20px;
-    padding-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main {
-    width: 100%;
-    max-width: 600px;
-    padding: 0;
-  }
-
   .container,
   .containerRdv,
   .paragraphType1 {
