@@ -140,16 +140,29 @@
 }
 
 @media (max-width: 800px) {
+  .banner {
+    align-self: center;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    background-position: center;
+  }
+  .title {
+    font-size: 24px;
+    padding: 20px;
+  }
   
   .subtitle2{
     border-radius: none;
   }
   .section1 {
     flex-direction: column;
+    width: 100%;
   }
   .texteblack {
-    width: 100%;
-    font-size: 24px;
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
   }
   .logo {
     height: 300px;
@@ -286,7 +299,12 @@
   box-shadow: 0 8px 16px rgba(0.3, 0, 0, 0.3);
   animation: fadeIn 1s ease-in-out;
 }
-
+.paragraphType4 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
 .texte {
   color: dimgray;
   padding: 10px;
@@ -449,9 +467,5 @@ a.secondary {
     justify-content: center;
   } 
 }
-@media (max-width: 768px) {
-  .event-card {
-    width: 100%;
-  }
-}
+
 

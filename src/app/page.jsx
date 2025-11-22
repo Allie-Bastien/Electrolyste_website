@@ -44,8 +44,10 @@ export default function Home() {
         <div className={styles.section1}>
           <div >
             <h2 className={styles.title}>Qu’est-ce que l’électrolyse sous microscope?</h2>
-            <p className={styles.texteblack}> L’électrolyse détruit chaque poil directement à la racine, empêchant ainsi la repousse. 
+            <div className={styles.paragraphType4}>
+              <p className={styles.texteblack}> L’électrolyse détruit chaque poil directement à la racine, empêchant ainsi la repousse. 
               L’usage d’un microscope médical permet des insertions d’une précision exceptionnelle, améliorant le confort, l’efficacité et la sécurité du traitement.  </p>
+            </div>
             <div className={styles.quoteContainer}>
               <p className={styles.quote}>Cette technique est aussi appelée </p>
               <p className={styles.quoteBold}> microtrolyse.</p>
