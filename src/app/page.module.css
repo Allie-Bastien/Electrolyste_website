@@ -224,6 +224,10 @@
   box-sizing: border-box;
 }
 
+.paragraphType1 > * {
+  outline: 3px solid blue !important;
+}
+
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
