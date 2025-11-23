@@ -11,6 +11,8 @@
   align-items: center;
   justify-items: center;
   font-family: var(--font-geist-sans);
+  width: 100%;
+  min-width: 100%;
 }
 
 .section1 {
