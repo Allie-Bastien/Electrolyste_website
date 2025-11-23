@@ -146,7 +146,10 @@
     font-size: 24px;
     padding: 20px;
   }
-  
+  .title2 {
+    font-size: 28px;
+    padding: 20px;
+  }
   .subtitle2{
     border-radius: none;
   }
@@ -173,12 +176,15 @@
     margin: 0 auto;
     padding: 20px;
   }
-
+  .listeQuestion {
+    padding: 0px;
+    width: 100%;
+  }
   .questions {
     flex-direction: column;
-    padding: 10px 0;
+    padding: 0;
+    width: 100%;
   }
-
   .question {
     width: 100%;
     padding-right: 0;
