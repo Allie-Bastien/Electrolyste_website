@@ -15,9 +15,8 @@
 
 .menu {
     position: absolute;
-    top: 142px;
     right: 0px;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     height: 25rem;
     border-bottom-left-radius: 0.5rem;
     background-color: #9EBFA4;
@@ -34,11 +33,10 @@
 
 .open {
     position: absolute;
-    top: 142px;
     right: 0px;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     width: 18rem;
-    height: 25rem;
+    height: 20rem;
     border-bottom-left-radius: 0.5rem;
     background-color: #9EBFA4;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
@@ -65,12 +63,12 @@
     .menu {
         width: 18rem;
         height: 20rem;
-        top: 112px;
+        margin-top: 0.95rem;
     }
 
     .open {
         width: 18rem;
         height: 20rem;
-        top: 112px;
+        margin-top: 0.95rem;
     }
 }
