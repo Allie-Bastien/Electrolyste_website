@@ -214,6 +214,8 @@
   gap: 32px;
   grid-row-start: 2;
   max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .main ol {
@@ -373,7 +375,6 @@
   font-size: 18px;
 }
 
-
 .question {
   display: flex;
   flex-direction: column;
@@ -381,7 +382,8 @@
   color: dimgray;
   width: 100%;
   max-width: 600px;
-  padding: 20px;
+  padding: 20px 60px 20px 20px;
+  box-sizing: border-box;
   border-bottom: 2px solid white;
 }
 
