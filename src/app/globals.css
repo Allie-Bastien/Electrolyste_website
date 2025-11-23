@@ -3,7 +3,9 @@
   --foreground: #171717;
 }
 
-
+* {
+  outline: 1px solid red;
+}
 
 html,
 body {
