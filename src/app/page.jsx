@@ -140,11 +140,11 @@ export default function Home() {
         <h2 className={styles.title2}>Coordonnées</h2>
         <ul>
           <li className={styles.infoliste}>
-            <label className={styles.infoName}>Courriel : </label>
+            <label className={styles.infoName}>Courriel </label>
             <label className={styles.texte}>microcliniqueclarea@gmail.com</label>
           </li>
           <li className={styles.infoliste}>
-            <label className={styles.infoName}>Adresse : </label>
+            <label className={styles.infoName}>Adresse </label>
             <label className={styles.texte}>1121 Rue de Bellechasse, Montréal, QC H2S 1Y5 (Clinique Neva)</label>
           </li>
         </ul>
