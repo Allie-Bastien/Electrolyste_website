@@ -73,7 +73,6 @@
 }
 
 .title {
-  left: 50%;
   font-size: 32px;
   color: var(--color-dark);
   font-family: "Georgia", serifs;
