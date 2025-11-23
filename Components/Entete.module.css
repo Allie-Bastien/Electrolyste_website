@@ -1,7 +1,6 @@
 /* Header Styles */
 .header {
   width: 100vw;
-  height: 150px;
   position: fixed;
   left: 50%;
   margin-top: -90px;
@@ -65,7 +64,8 @@
 @media (max-width: 700px) {
   .header {
     position: absolute;
-    margin-bottom: 0;
+    margin-top: -25vw;
+    top: 25vw;
   }
   .Logo{
     height: 70px;
