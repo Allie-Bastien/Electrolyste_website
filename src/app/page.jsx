@@ -53,7 +53,7 @@ export default function Home() {
               <p className={styles.quoteBold}> microtrolyse.</p>
             </div>
           </div>
-          <img src="" alt="Logo Electrolyse" className={styles.logo} />
+          <img src="Pascale.jpg" alt="Logo Electrolyse" className={styles.logo} />
         </div>
         <div className={styles.paragraphType1}>
             <h2 id="Électrolyse au microscope" className={styles.title2}>LES AVANTAGES DE LA MICROTROLYSE</h2>
