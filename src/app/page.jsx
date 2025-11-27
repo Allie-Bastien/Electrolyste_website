@@ -76,7 +76,7 @@ export default function Home() {
               <li>Transition/affirmation de genre</li>
               <li>Poils incarnés, folliculites ou irritation dues au rasage / cire </li>
               <li>Finition après traitements laser</li>
-              <li> Contre-indications au laser (poils clairs, médication, phototypes non compatibles et autres)</li>
+              <li>Contre-indications au laser (poils clairs, médication, phototypes non compatibles et autres)</li>
               <li>Pilosité génétique ou localisée (menton, lèvre, aréoles, etc.)</li>
               <li>Recherche d’un résultat permanent</li>
             </ul>
@@ -124,7 +124,9 @@ export default function Home() {
             </ul>
 
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
-            <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains traitements peuvent être refusés à la discrétion de l’électrolyste.</p>
+            <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains traitements peuvent être refusés à la discrétion de l’électrolyste.
+               Le respect et le professionnalisme sont au cœur de la philosophie de l’établissement.
+            </p>
         </div>
       
       <div id="APropos" className={styles.paragraphType2}>
@@ -141,7 +143,7 @@ export default function Home() {
         <ul>
           <li className={styles.infoliste}>
             <label className={styles.infoName}>Courriel </label>
-            <label className={styles.texte}>microcliniqueclarea@gmail.com</label>
+            <label className={styles.texte}>clarea.electrolyse@gmail.com</label>
           </li>
           <li className={styles.infoliste}>
             <label className={styles.infoName}>Adresse </label>

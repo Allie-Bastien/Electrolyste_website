@@ -18,7 +18,7 @@ export default function DropdownMenu() {
             La microtrolyse
           </Link>
           <Link href="/#FAQ" className={styles.menuItem} onClick={open ? () => setOpen(false) : null}>
-            Questions fréquentes
+            Questions/Réponses
           </Link>
           <Link href="/#Tarifs" className={styles.menuItem} onClick={open ? () => setOpen(false) : null}>
             Tarifs
