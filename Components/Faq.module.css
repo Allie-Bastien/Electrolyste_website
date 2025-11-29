@@ -30,6 +30,7 @@
 
 .questionC {
   max-height: 0;
+  cursor: pointer;
   overflow: hidden;
   transform: translateY(-2rem), 
   scaleY(0);
@@ -39,6 +40,7 @@
 }
 .questionO {
   overflow: hidden;
+  cursor: pointer;
   opacity: 1;
   transform: translateY(-2rem), 
   scaleY(1);
