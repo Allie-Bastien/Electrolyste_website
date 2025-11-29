@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Entete from "../../Components/Entete";
 import RDV from "../../Components/RDV";
+import Faq from "../../Components/Faq";
 
 
 export const metadata = {
@@ -30,7 +31,9 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+
+
+export default function Home() {    
   return (
     <div className={styles.page}>
       <header >
@@ -85,34 +88,7 @@ export default function Home() {
        
             <h2 id="FAQ" className={styles.title2}>Questions fréquentes</h2>
 
-            <div className={styles.listeQuestion}>
-                <div className={styles.question}>
-                  <label>⌄  Q: Est‑ce vraiment permanent ?</label>
-                  <label>R: Oui, l’électrolyse est la seule méthode d’épilation officiellement reconnue comme permanente.</label>
-                </div>
-               
-                <div className={styles.question}>
-                  <label>⌄  Q: Combien de séances vais‑je devoir faire ?</label>
-                  <label>R: Chaque personne est unique, et le nombre de séances dépend de plusieurs facteurs : type de poils, zone traitée, 
-                    historique d’épilation, variations hormonales, etc. Une évaluation personnalisée permet d’établir un plan adapté et réaliste.</label>
-                </div>
-                <div className={styles.question}>
-                  <label>⌄  Q: Est‑ce douloureux ?</label>
-                  <label>R: Vous pouvez ressentir une légère chaleur ou un picotement, mais le traitement est généralement très bien toléré.</label>
-                </div>
-                <div className={styles.question}>
-                  <label>⌄  Q: Est-ce efficace sur les poils clairs, roux ou blancs?</label>
-                  <label>R: Oui. L’électrolyse est la seule méthode réellement définitive pour ces types de poils, puisqu’ils ne répondent pas au laser.</label>
-                </div>
-                <div className={styles.question}>
-                  <label>⌄  Q: Puis-je faire de l’électrolyse si j’ai déjà fait du laser ?</label>
-                  <label>R: Oui. C’est même la combinaison idéale pour éliminer les poils restants, fins, pâles ou résistants au laser.</label>
-                </div>
-                <div className={styles.question}>
-                  <label>⌄  Q: À quel rythme devrais-je revenir ?</label>
-                  <label>R: La plupart des clients reviennent toutes les 1 à 4 semaines pendant quelques mois, selon la zone et la vitesse de repousse.</label>
-                </div>
-            </div>
+            <Faq></Faq>
           
             <h2 id="Tarifs" className={styles.title2}>Tarifs</h2>
 

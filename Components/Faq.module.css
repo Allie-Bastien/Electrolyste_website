@@ -1,0 +1,47 @@
+.listeQuestion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+  color: dimgray;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 60px 20px 20px;
+  border-bottom: 2px solid white;
+  cursor:pointer;
+}
+
+.question :first-child {
+  border-top: none;
+}
+
+.q {
+  font-weight: bold;
+  margin-bottom: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.questionC {
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-2rem), 
+  scaleY(0);
+  opacity: 0;
+  margin-top: -20px;
+  transition: transform 0.3s ease, margin-top 0.3s ease, opacity 0s 0.3s;
+}
+.questionO {
+  overflow: hidden;
+  opacity: 1;
+  transform: translateY(-2rem), 
+  scaleY(1);
+  margin-top: 0px;
+    transition: transform 0.3s ease, margin-top 0.3s ease, opacity 0s;
+}
