@@ -23,6 +23,10 @@ export default function Questions() {
                   <label className={`${Q2 ? styles.questionO : styles.questionC}`} >R: Chaque personne est unique, et le nombre de séances dépend de plusieurs facteurs : type de poils, zone traitée, 
                     historique d’épilation, variations hormonales, etc. Une évaluation personnalisée permet d’établir un plan adapté et réaliste.</label>
                 </div>
+                <div className={styles.question} onClick={() => setQ6(!Q6)}>
+                  <label className={styles.q} onClick={() => setQ6(!Q6)}>▼  Q: À quel rythme devrais-je revenir ?</label>
+                  <label className={`${Q6 ? styles.questionO : styles.questionC}`} >R: La plupart des clients reviennent toutes les 1 à 4 semaines pendant quelques mois, selon la zone et la vitesse de repousse.</label>
+                </div>
                 <div className={styles.question} onClick={() => setQ3(!Q3)}>
                   <label className={styles.q} onClick={() => setQ3(!Q3)}>▼  Q: Est‑ce douloureux ?</label>
                   <label className={`${Q3 ? styles.questionO : styles.questionC}`} >R: Vous pouvez ressentir une légère chaleur ou un picotement, mais le traitement est généralement très bien toléré.</label>
@@ -35,10 +39,7 @@ export default function Questions() {
                   <label className={styles.q} onClick={() => setQ5(!Q5)}>▼  Q: Puis-je faire de l’électrolyse si j’ai déjà fait du laser ?</label>
                   <label className={`${Q5 ? styles.questionO : styles.questionC}`} >R: Oui. C’est même la combinaison idéale pour éliminer les poils restants, fins, pâles ou résistants au laser.</label>
                 </div>
-                <div className={styles.question} onClick={() => setQ6(!Q6)}>
-                  <label className={styles.q} onClick={() => setQ6(!Q6)}>▼  Q: À quel rythme devrais-je revenir ?</label>
-                  <label className={`${Q6 ? styles.questionO : styles.questionC}`} >R: La plupart des clients reviennent toutes les 1 à 4 semaines pendant quelques mois, selon la zone et la vitesse de repousse.</label>
-                </div>
+                
             </div>
   </>
     

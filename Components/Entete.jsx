@@ -10,11 +10,17 @@ export default function Entete() {
   return <>
     <div className={styles.header}>
       <div className={styles.headerContent}>
-        <div className={styles.logoContainer}>
+        <div className={styles.titleContainer}>
           <img alt="Logo" src="LogoClarea.png" className={styles.Logo}/>
-          <img alt="clarea" src="clarea.png" className={styles.logotexte}/>
+          <div className={styles.logoContainer}>
+            <img alt="clarea" src="clarea.png" className={styles.logotexte}/>
+            <label className={styles.texte}>Épilation définitive │ Électrolyse de précision</label>
+          </div>
         </div>
-        <Menu />
+          <div className={styles.titleContainer}>
+            <button className={styles.langueButton}>EN</button>
+            <Menu />
+          </div>
         </div>
     </div>
   </>;

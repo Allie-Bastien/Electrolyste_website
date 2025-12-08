@@ -40,52 +40,69 @@ export default function Home() {
         <Entete/>
       </header>
       <main className={styles.main}>
-        <div className={styles.banner}>
-            <label className={styles.subtitle}>Électrolyse de précision sous microscope</label>
-            <label className={styles.subtitle2}>Une approche avancée qui mise sur la finesse du geste et des résultats durables.</label>
-          </div>
-        <div className={styles.section1}>
-          <div >
+        <img src="Image site (1).jpg" className={styles.banner}></img>
+          <div className={styles.paragraphType4}>
             <h2 className={styles.title}>Qu’est-ce que l’électrolyse sous microscope?</h2>
             <div className={styles.paragraphType4}>
-              <p className={styles.texteblack}> L’électrolyse détruit chaque poil directement à la racine, empêchant ainsi la repousse. 
-              L’usage d’un microscope médical permet des insertions d’une précision exceptionnelle, améliorant le confort, l’efficacité et la sécurité du traitement.  </p>
-            </div>
-            <div className={styles.quoteContainer}>
-              <p className={styles.quote}>Cette technique est aussi appelée </p>
-              <p className={styles.quoteBold}> microtrolyse.</p>
+              <p className={styles.texteblack}> L’électrolyse détruit le follicule à la racine et empêche ainsi la repousse. Le microscope
+                médical permet à l’électrolyste d’offrir ce service d’épilation permanente avec une
+                précision maximale. 
+              </p>
             </div>
           </div>
-          <img src="Pascale.jpg" alt="Logo Electrolyse" className={styles.logo} />
-        </div>
         <div className={styles.paragraphType1}>
-            <h2 id="Électrolyse au microscope" className={styles.title2}>LES AVANTAGES DE LA MICROTROLYSE</h2>
+            <h2 id="Électrolyse au microscope" className={styles.title2}>LES AVANTAGES</h2>
 
             <h3 className={styles.title3}>Résultats définitifs</h3>
             <p className={styles.texte}>Élimine de façon permanente la pilosité indésirable.</p>
 
             <h3 className={styles.title3}>Efficacité</h3>
-            <p className={styles.texte}>La seule méthode qui convient à tous les types de peaux et de poils, même ceux résistant à l’épilation laser.</p>
-
-            <h3 className={styles.title3}>Précision</h3>
-            <p className={styles.texte}>Une approche méticuleuse pour traiter chaque poil individuellement en limitant l’inconfort et l’irritation post-traitement.</p>
-
+            <p className={styles.texte}>Une méthode attentive pour traiter chaque poil séparément, en minimisant l’inconfort et
+              l’irritation après le traitement.
+            </p>
             <h3 className={styles.title3}>Sécurité</h3>
-            <p className={styles.texte}>Méthode éprouvée, réalisée avec précision pour protéger l’intégrité de la peau..</p>
+            <p className={styles.texte}>Méthode éprouvée sans dommage pour la peau, même sur les zones délicates.</p>
 
+            <h3 className={styles.title3}>Efficacité</h3>
+            <p className={styles.texte}>La seule méthode qui convient à tous les types de peaux et de poils, même ceux
+              résistant à l’épilation laser.
+            </p>
             <p className={styles.texte}>Voici quelques situations fréquentes dans lesquelles l’électrolyse peut être recommandée :</p>
             <ul className={styles.liste}>
               <li>Pilosité liée à des changements hormonaux (grossesse, ménopause, SOPK/PCOS, hirsutisme et autres)</li>
               <li>Transition/affirmation de genre</li>
               <li>Poils incarnés, folliculites ou irritation dues au rasage / cire </li>
-              <li>Finition après traitements laser</li>
+              <li>Finition après des traitements d'épilation au laser</li>
               <li>Contre-indications au laser (poils clairs, médication, phototypes non compatibles et autres)</li>
               <li>Pilosité génétique ou localisée (menton, lèvre, aréoles, etc.)</li>
               <li>Recherche d’un résultat permanent</li>
             </ul>
-
-            <p className={styles.texte}>Une approche minutieuse qui augmente le taux de destruction du poil tout en minimisant l’irritation. C’est ce que vous obtiendrez chez Clarea.</p>
-       
+        </div>
+        
+          <div className={styles.section1}>
+            <div id="APropos" className={styles.paragraphType2}>
+              <h2 className={styles.title}>À PROPOS</h2>
+              <p className={styles.texteblack}>J’ai développé une approche à la fois minutieuse et
+                bienveillante, axée sur le confort et la confiance.
+                Chaque séance est adaptée aux besoins du corps et
+                au rythme de la personne. Mon objectif est d’offrir un
+                espace où l’on se sent en sécurité, écouté et
+                accompagné vers des résultats durables.
+                L’initiative de CLAREA – Épilation définitive a
+                débuté en janvier 2023, et mon installation à la
+                Clinique Néva depuis le 1er décembre 2025
+                marque une étape importante dans cette évolution. Je
+                suis vraiment emballée d’intégrer un milieu aussi
+                positif, inclusif et chaleureux, qui reflète
+                parfaitement ma vision et contribue à rehausser la
+                qualité de l’expérience que j’offre à ma clientèle. </p>
+            </div>
+            <div className={styles.main}>
+              <img src="Pascale.jpg" alt="Logo Electrolyse" className={styles.logo} />
+              <label className={styles.texte}>Pascale Legault, électrolyste certifiée</label>
+            </div>
+          </div>
+          <div className={styles.paragraphType1}>
             <h2 id="FAQ" className={styles.title2}>Questions fréquentes</h2>
 
             <Faq></Faq>
@@ -100,35 +117,30 @@ export default function Home() {
             </ul>
 
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
-            <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains traitements peuvent être refusés à la discrétion de l’électrolyste.
-               Le respect et le professionnalisme sont au cœur de la philosophie de l’établissement.
+            <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains
+              traitements peuvent être refusés à la discrétion de l’électrolyste.
             </p>
         </div>
-      
-      <div id="APropos" className={styles.paragraphType2}>
-        <h2 className={styles.title}>À PROPOS</h2>
-        <p className={styles.texteblack}>Je m’appelle Pascale Legault, je suis électrolyste certifiée et spécialisée en microtrolyse depuis 2022.
-           J’ai développé une approche à la fois minutieuse et bienveillante, axée sur le confort et la confiance. Chaque séance est adaptée aux besoins, 
-           au corps et au rythme de la personne. Mon objectif est d’offrir un espace où l’on se sent en sécurité, écouté et accompagné vers des résultats durables.  </p>
-      </div>
-
 
 
       <div id="Contact" className={styles.paragraphType3}>
-        <h2 className={styles.title2}>Coordonnées</h2>
+        <h2 className={styles.title2}>Contact</h2>
         <ul>
           <li className={styles.infoliste}>
             <label className={styles.infoName}>Courriel </label>
-            <label className={styles.texte}>clarea.electrolyse@gmail.com</label>
+            <label className={styles.texte}>clarea.epilation@gmail.com</label>
+          </li>
+          <li className={styles.infoliste}>
+            <label className={styles.infoName}>Texte/appel : </label>
+            <label className={styles.texte}>819-743-9210</label>
           </li>
           <li className={styles.infoliste}>
             <label className={styles.infoName}>Adresse </label>
             <label className={styles.texte}>1121 Rue de Bellechasse, Montréal, QC H2S 1Y5 (Clinique Neva)</label>
           </li>
         </ul>
+        <h2 className={styles.title2}>Disponibilité</h2>
         <label className={styles.infoDesc}>*Par rendez-vous seulement  </label>
-
-        <h2 className={styles.title2}>Heures d’ouverture</h2>
         <ul>
           <li className={styles.texte}>Lundi : 17 h à 22 h</li>
           <li className={styles.texte}>Jeudi : 17 h à 22 h</li>

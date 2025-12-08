@@ -12,6 +12,8 @@
 .logoContainer {
   display: flex;
     flex-direction: column;
+    align-items: left;
+    align-self: left;
     padding: 10px
 }
 .Logo{
@@ -29,6 +31,10 @@
   align-items: flex-start;
   margin-left: 20px;
 }
+.texte {
+  font-family: 'playfair display', serif;
+  color: #74827c;
+}
 
 .headerContent {
   padding-left: 50px;
@@ -38,6 +44,24 @@
   display: flex;
   justify-content: space-between; /* vertically centers */
   align-items: center;     /* horizontally centers */
+}
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+}
+.langueButton {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  margin-right: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  color: #c0c0c0;
+}
+
+.langueButton:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
 }
   .title {
     font-family: "Georgia", serifs;

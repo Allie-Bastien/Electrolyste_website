@@ -60,19 +60,12 @@
 }
 
 .banner {
-  height: 200px;
+  height: max-content;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 30px;
   border-radius: 5px;
   margin-bottom: 20px;
-  background-image: url('/ChatGPT Image.png');
-  background-size: 100% 250%;
-  background-position: 10% 30%;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .title {
@@ -130,6 +123,7 @@
   width: 100%;
   max-width: 250px; /* for logo */
   height: auto;
+  align-self: center;
 }
 
 @media (max-width: 800px) {
@@ -282,7 +276,6 @@
   box-shadow: 0 8px 16px rgba(0.3, 0, 0, 0.3);
   animation: fadeIn 1s ease-in-out;
   padding: 10vw;
-  margin: -20px;
 }
 
 .paragraphType2 {
