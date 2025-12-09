@@ -84,7 +84,7 @@
   }
   .Logo{
     height: 60px;
-    left: 30vw;
+    margin-left: -30vw;
   }
   .logotexte{
     height: 40px;
