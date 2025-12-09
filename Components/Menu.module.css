@@ -63,7 +63,7 @@
     .buttonMenu {
         width: 60px;
         height: 50px;
-        padding : 5px;
+        padding : none;
     }
     .menu {
         width: 18rem;
