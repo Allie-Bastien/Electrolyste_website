@@ -80,11 +80,11 @@
   .header {
     position: absolute;
     margin-top: -25vw;
+    margin-left: none;
     top: 25vw;
   }
   .Logo{
     height: 60px;
-    margin-left: -30vw;
   }
   .logotexte{
     height: 40px;
