@@ -42,6 +42,7 @@
 }
 .langueButton {
   background-color: transparent;
+  user-select: none;
   border: none;
   font-size: 3rem;
   margin-right: 2vw;

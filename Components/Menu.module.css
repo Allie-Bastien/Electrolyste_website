@@ -60,9 +60,9 @@
 
 
 @media (max-width: 700px) {
-    .buttonMenu {
-        width: 10px;
-        height: 10px;
+    .boutonMenu {
+        width: 1.5rem;
+        height: 1.5rem;
         padding : none;
     }
     .menu {
