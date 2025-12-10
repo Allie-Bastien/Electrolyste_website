@@ -164,6 +164,7 @@
   .main{
     gap: 0;
     grid-row-start: 0;
+    box-sizing: content-box;
   }
 
   .container,
