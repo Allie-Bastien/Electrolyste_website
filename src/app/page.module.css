@@ -132,12 +132,14 @@
     gap: 0;
   }
   .banner {
+    align-self: center;
     width: 100vw;
+    background-position: center;
     margin-top: 5rem;
   }
   .title {
     font-size: 20px;
-    padding: 15px;
+    padding: px;
   }
   .title2 {
     font-size: 20px;
@@ -159,7 +161,9 @@
     max-width: 100%;
     height: auto;
   }
-
+  .main{
+    gap: 0;
+  }
 
   .container,
   .containerRdv,
