@@ -138,8 +138,8 @@
     margin-top: 5rem;
   }
   .title {
-    font-size: 24px;
-    padding: 20px;
+    font-size: 20px;
+    padding: 15px;
   }
   .title2 {
     font-size: 20px;
@@ -167,7 +167,6 @@
   .containerRdv,
   .paragraphType1 {
     width: 100%;
-    max-width: 600px;
     margin: 0 auto;
     padding: 0px;
   }
