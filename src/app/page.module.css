@@ -132,6 +132,9 @@
     gap: 0;
   }
   .banner {
+    align-self: center;
+    width: 100vw;
+    background-position: center;
     margin-top: 5rem;
   }
   .title {
@@ -160,6 +163,7 @@
   }
   .main{
     gap: 0;
+    grid-row-start: 0;
   }
 
   .container,
