@@ -61,8 +61,8 @@
 
 @media (max-width: 700px) {
     .boutonMenu {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 70px;
+        height: 70px;
         padding : none;
     }
     .menu {
