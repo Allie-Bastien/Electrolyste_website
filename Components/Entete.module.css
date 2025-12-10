@@ -82,7 +82,10 @@
     margin-top: -25vw;
     margin-left: none;
     top: 25vw;
-    left: 25%;
+  }
+  .headerContent {
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .Logo{
     height: 60px;

@@ -134,7 +134,7 @@
   .banner {
     align-self: center;
     height: auto;
-    width: 100%;
+    width: 100vw;
     background-position: center;
     margin-top: 5rem;
   }
