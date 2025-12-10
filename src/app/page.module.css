@@ -128,7 +128,7 @@
 
 @media (max-width: 800px) {
   .page {
-    padding: 10%;
+    padding: 0;
     gap: 2%;
   }
   .banner {
