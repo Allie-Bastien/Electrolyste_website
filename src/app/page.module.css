@@ -129,7 +129,7 @@
 @media (max-width: 800px) {
   .page {
     padding: 0;
-    gap: 2%;
+    gap: 0;
   }
   .banner {
     align-self: center;
