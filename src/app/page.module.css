@@ -9,7 +9,7 @@
   display: grid;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
-  justify-items: center;
+  justify-items: stretch;
   font-family: var(--font-geist-sans);
   width: 100%;
   min-width: 100%;
