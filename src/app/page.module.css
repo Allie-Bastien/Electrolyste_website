@@ -136,6 +136,7 @@
     font-size: 20px;
   }
   .title2 {
+    max-width: 600px;
     font-size: 28px;
     align-self: center;
     padding: 15px;
