@@ -136,6 +136,7 @@
     font-size: 20px;
   }
   .title2 {
+    white-space: nowrap;
     max-width: 600px;
     font-size: 28px;
     align-self: center;
