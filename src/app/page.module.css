@@ -140,6 +140,7 @@
     font-size: 28px;
     align-self: center;
     padding-top: 15px;
+    padding-left: -15px;
   }
   .subtitle2{
     border-radius: none;
