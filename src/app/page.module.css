@@ -121,8 +121,8 @@
 
 .logo {
   width: 100%;
-  max-width: 250px; /* for logo */
-  height: auto;
+  max-height: 400px; /* for logo */
+  width: auto;
   align-self: center;
 }
 
