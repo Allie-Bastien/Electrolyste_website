@@ -31,8 +31,8 @@ export default function BookingForm() {
       data-language="fr"
       data-label="Prendre un rendez-vous"
       data-url="https://www.gorendezvous.com/"
-      className="gorendezvous-button"
-      data-buttoncolor=""
+      className={Styles.button}
+      data-buttoncolor="#0088cc"
       data-width="280px"
       data-height="50px"
     >

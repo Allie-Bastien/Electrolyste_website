@@ -7,15 +7,20 @@
 }
 
 .button {
-    margin-top: 20px;
+    align-content: center;
     padding : 10px;
     width: 50%;
-    background-color: #f8f6f0 ;
+    background-color: white ;
+    border: #66AAFF 3px solid;
     font-weight: bold;
-    color: white;
-    border: none;
     border-radius: 15px;
     cursor: pointer;
+    margin-left: 7.5vw;
+}
+.button:hover {
+    background-color: #66AAFF;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .formGroup {
