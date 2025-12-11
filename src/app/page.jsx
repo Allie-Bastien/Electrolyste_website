@@ -67,6 +67,7 @@ export default function Home() {
             <p className={styles.texte}>La seule méthode qui convient à tous les types de peaux et de poils, même ceux
               résistant à l’épilation laser.
             </p>
+            <h2 id="Électrolyse au microscope" className={styles.title2}>Pourquoi choisir l'électrolyse?</h2>
             <p className={styles.texte}>Voici quelques situations fréquentes dans lesquelles l’électrolyse peut être recommandée :</p>
             <ul className={styles.liste}>
               <li>Pilosité liée à des changements hormonaux (grossesse, ménopause, SOPK/PCOS, hirsutisme et autres)</li>
@@ -88,19 +89,22 @@ export default function Home() {
                 au rythme de la personne. Mon objectif est d’offrir un
                 espace où l’on se sent en sécurité, écouté et
                 accompagné vers des résultats durables.
-                L’initiative de CLAREA – Épilation définitive a
+                 </p>
+            </div>
+            <div className={styles.main}>
+              <img src="Pascale.jpg" alt="Logo Electrolyse" className={styles.logo} />
+              <label className={styles.quote}>Pascale Legault, électrolyste certifiée</label>
+            </div>
+               <p className={styles.texteblack}>L’initiative de CLAREA – Épilation définitive a
                 débuté en janvier 2023, et mon installation à la
                 Clinique Néva depuis le 1er décembre 2025
                 marque une étape importante dans cette évolution. Je
                 suis vraiment emballée d’intégrer un milieu aussi
                 positif, inclusif et chaleureux, qui reflète
                 parfaitement ma vision et contribue à rehausser la
-                qualité de l’expérience que j’offre à ma clientèle. </p>
-            </div>
-            <div className={styles.main}>
-              <img src="Pascale.jpg" alt="Logo Electrolyse" className={styles.logo} />
-              <label className={styles.texte}>Pascale Legault, électrolyste certifiée</label>
-            </div>
+                qualité de l’expérience que j’offre à ma clientèle.
+                </p>
+                <img src="salle_traitement.jpg" alt="Logo Electrolyse" className={styles.logo} />
           </div>
           <div className={styles.paragraphType1}>
             <h2 id="FAQ" className={styles.title2}>Questions fréquentes</h2>
