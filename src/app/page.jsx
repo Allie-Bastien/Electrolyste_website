@@ -146,9 +146,9 @@ export default function Home() {
         <h2 className={styles.title2}>Disponibilité</h2>
         <label className={styles.infoDesc}>*Par rendez-vous seulement  </label>
         <ul>
-          <li className={styles.texte}>Lundi : 17 h à 22 h</li>
-          <li className={styles.texte}>Jeudi : 17 h à 22 h</li>
-          <li className={styles.texte}>Samedi : 11 h à 18 h</li>
+          <li className={styles.texteblack}>Lundi : 17 h à 22 h</li>
+          <li className={styles.texteblack}>Jeudi : 17 h à 22 h</li>
+          <li className={styles.texteblack}>Samedi : 11 h à 18 h</li>
         </ul>
       </div>
 
