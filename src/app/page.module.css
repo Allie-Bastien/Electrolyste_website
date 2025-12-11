@@ -126,10 +126,6 @@
 }
 
 @media (max-width: 800px) {
-  .page {
-    padding: 0;
-    gap: 0;
-  }
   .banner {
     align-self: center;
     width: 100vw;
@@ -159,14 +155,6 @@
     max-width: 100%;
     height: auto;
   }
-  .main{
-    gap: 0;
-    grid-row-start: 0;
-    box-sizing:unset;
-    padding: 0;
-    overflow-x: visible;
-  }
-
   .container,
   .containerRdv,
   .paragraphType1 {
