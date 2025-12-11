@@ -165,6 +165,7 @@
     grid-row-start: 0;
     box-sizing:unset;
     padding: 0;
+    overflow-x: visible;
   }
 
   .container,
