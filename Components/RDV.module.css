@@ -1,13 +1,13 @@
 .button {
     align-content: center;
     padding : 10px;
-    width: 75%;
+    width: 100%;
     background-color: white ;
+    opacity: 0;
     border: #66AAFF 3px solid;
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
-    margin-left: 15%;
 }
 .button:hover {
     background-color: #66AAFF;

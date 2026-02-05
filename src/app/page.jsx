@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Entete from "../../Components/Entete";
 import RDV from "../../Components/RDV";
 import Faq from "../../Components/Faq";
+import Link from "next/link";
 
 
 export const metadata = {
@@ -42,42 +43,64 @@ export default function Home() {
       <main className={styles.main}>
         <img src="Image site (1).jpg" className={styles.banner}></img>
           <div className={styles.paragraphType4}>
-            <h2 className={styles.title}>Qu’est-ce que l’électrolyse sous microscope?</h2>
+            <h2 className={styles.title}>Clarea se spécialise dans l’épilation définitive.</h2>
             <div className={styles.paragraphType4}>
-              <p className={styles.texteblack}> L’électrolyse détruit le follicule à la racine et empêche ainsi la repousse. Le microscope
-                médical permet à l’électrolyste d’offrir ce service d’épilation permanente avec une
-                précision maximale. 
+              <p className={styles.texteblack}> Deux des technologies les plus performantes de l’industrie y sont
+                utilisées pour atteindre vos objectifs : l’électrolyse de précision, pour
+                un travail minutieux poil par poil, et l’épilation au laser, pour les zones
+                plus étendues et des résultats rapides.
               </p>
+              <p className={styles.texteblack}>
+                Deux approches complémentaires, un même standard : des traitements
+                complets, sécuritaires et respectueux de votre peau.
+              </p>
+              
             </div>
           </div>
         <div className={styles.paragraphType1}>
-            <h2 id="Électrolyse au microscope" className={styles.title2}>LES AVANTAGES</h2>
-
-            <h3 className={styles.title3}>Résultats définitifs</h3>
-            <p className={styles.texte}>Élimine de façon permanente la pilosité indésirable.</p>
-
-            <h3 className={styles.title3}>Efficacité</h3>
-            <p className={styles.texte}>Une méthode attentive pour traiter chaque poil séparément, en minimisant l’inconfort et
-              l’irritation après le traitement.
+            <p id="Électrolyse au microscope" className={styles.texte}> 
+              Bien qu’une seule des technologies puisse suffire pour atteindre vos
+              objectifs, il est parfois judicieux de les combiner afin d’accélérer le
+              processus et d’obtenir des résultats complets et durables. Une stratégie
+              adaptée à votre cas sera proposée lors de la consultation. 
             </p>
-            <h3 className={styles.title3}>Sécurité</h3>
-            <p className={styles.texte}>Méthode éprouvée sans dommage pour la peau, même sur les zones délicates.</p>
-
-            <h3 className={styles.title3}>Efficacité</h3>
-            <p className={styles.texte}>La seule méthode qui convient à tous les types de peaux et de poils, même ceux
-              résistant à l’épilation laser.
-            </p>
-            <h2 id="Électrolyse au microscope" className={styles.title2}>Pourquoi choisir l'électrolyse?</h2>
+            <h2 className={styles.title2}>Pourquoi choisir l'électrolyse?</h2>
             <p className={styles.texte}>Voici quelques situations fréquentes dans lesquelles l’électrolyse peut être recommandée :</p>
             <ul className={styles.liste}>
-              <li>Pilosité liée à des changements hormonaux (grossesse, ménopause, SOPK/PCOS, hirsutisme et autres)</li>
+              <li>Pilosité liée à des variations hormonales (grossesse, ménopause, SOPK/PCOS, hirsutisme et autres)</li>
               <li>Transition/affirmation de genre</li>
-              <li>Poils incarnés, folliculites ou irritation dues au rasage / cire </li>
-              <li>Finition après des traitements d'épilation au laser</li>
-              <li>Contre-indications au laser (poils clairs, médication, phototypes non compatibles et autres)</li>
-              <li>Pilosité génétique ou localisée (menton, lèvre, aréoles, etc.)</li>
-              <li>Recherche d’un résultat permanent</li>
+              <li>Finition après des traitements au laser (poils blancs, pâles ou fins résistants au laser)</li>
+              <li>Contre-indications au laser (médications, phototypes non compatibles, etc.)</li>
+              <li>Poils isolés sur des zones sensibles ou très sculptées (ex. mamelon, arcade sourcilière, etc.)</li>
             </ul>
+            <p className={styles.texte}>
+              L’électrolyse permet de traiter chaque poil
+              individuellement et de manière définitive.
+              Chez Clarea, l’épilateur Elite Spectrum
+              d’Instantron est utilisé en combinaison
+              avec un microscope chirurgical Zeiss
+              pour un traitement d’une grande
+              précision. À l’aide d’un filament stérile,
+              jetable et changé à chaque session, la
+              racine du poil est ciblée pour empêcher
+              sa repousse.
+            </p>
+            <h2 className={styles.title2}>Pourquoi choisir le laser?</h2>
+            <ul className={styles.liste}>
+              <li>Réduction rapide de la pilosité sur les grandes zones</li>
+              <li>Poils foncés sur peau claire (cas idéal pour l’absorption du laser)</li>
+              <li>Complément avant l’électrolyse pour réduire la densité de la pilosité </li>
+              <li>Transition / affirmation de genre</li>
+              <li>Folliculites ou poils incarnés</li>
+              <li>Irritation suite au rasage ou à l’épilation à la cire</li>
+            </ul>
+            <p className={styles.texte}>
+              Le laser permet de traiter un grand nombre de poils simultanément, ce qui réduit rapidement la densité et la
+              fréquence de repousse. Chez Clarea, l’appareil LightSheer de Lumenis est utilisé, une technologie éprouvée et
+              reconnue pour offrir des résultats constants et rapides en épilation laser. Ce laser diode est optimisé pour les
+              phototypes 1 à 4 sur l’échelle de Fitzpatrick, avec une excellente absorption sur les poils foncés et les
+              peaux claires à moyennement foncées.
+            </p>
         </div>
         
           <div className={styles.section1}>
@@ -112,12 +135,28 @@ export default function Home() {
             <Faq></Faq>
           
             <h2 id="Tarifs" className={styles.title2}>Tarifs</h2>
-
+            <h2 className={styles.title3}>Électrolyse au microscope</h2>
             <ul className={styles.liste}>
               <li>15 min – 50$</li>
               <li>30 min – 60$</li>
               <li>45 min – 75$</li>
               <li>60 min – 90$</li>
+              <li>90 min – 140$</li>
+            </ul>
+            <h2 className={styles.title3}>Épilation au laser</h2>
+            <ul className={styles.liste}>
+              <li>Petite zone – 50$
+                <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
+              </li>
+              <li>Zone moyenne – 80$
+              <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
+              </li>
+              <li>Grande zone – 110$
+              <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
+              </li>
+              <li>Très grande zone – 140$
+              <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>
+              </li>
             </ul>
 
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
@@ -131,16 +170,17 @@ export default function Home() {
         <h2 className={styles.title2}>Contact</h2>
         <ul>
           <li className={styles.infoliste}>
-            <label className={styles.infoName}>Courriel </label>
-            <label className={styles.texte}>clarea.epilation@gmail.com</label>
+            <label className={styles.infoName}>Courriel :</label>
+            <Link className={styles.texte} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</Link>
           </li>
           <li className={styles.infoliste}>
             <label className={styles.infoName}>Texte/appel : </label>
             <label className={styles.texte}>819-743-9210</label>
           </li>
           <li className={styles.infoliste}>
-            <label className={styles.infoName}>Adresse </label>
-            <label className={styles.texte}>1121 Rue de Bellechasse, Montréal, QC H2S 1Y5 (Clinique Neva)</label>
+            <label className={styles.infoName}>Adresse :</label>
+            <Link className={styles.texte} href="https://www.google.com/maps/place/1121+Rue+de+Bellechasse,+Montréal,+QC+H2S+1Y5/@45.5368223,-73.6007689,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc9196632bd8e8b:0xa4f58f43cfb19c9e!8m2!3d45.5368223!4d-73.5981886!16s%2Fg%2F11nntq80_f?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D">1121 Rue de Bellechasse, Montréal, QC H2S 1Y5</Link>
+            <Link className={styles.texte} href="https://www.cliniqueneva.com/"> (Clinique Neva)</Link>
           </li>
         </ul>
         <h2 className={styles.title2}>Disponibilité</h2>
@@ -148,7 +188,7 @@ export default function Home() {
         <ul>
           <li className={styles.texteblack}>Lundi : 17 h à 22 h</li>
           <li className={styles.texteblack}>Jeudi : 17 h à 22 h</li>
-          <li className={styles.texteblack}>Samedi : 11 h à 18 h</li>
+          <li className={styles.texteblack}>Samedi : 10 h à 18 h</li>
         </ul>
       </div>
 

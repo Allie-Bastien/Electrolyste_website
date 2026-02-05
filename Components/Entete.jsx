@@ -11,10 +11,10 @@ export default function Entete() {
     <div className={styles.header}>
       <div className={styles.headerContent}>
         <div className={styles.titleContainer}>
-          <img alt="Logo" src="clarea.png" className={styles.Logo}/>
+          <img alt="Logo" src="clarea.jpg" className={styles.Logo}/>
         </div>
           <div className={styles.titleContainer}>
-            <button className={styles.langueButton}>EN</button>
+           {false == <button className={styles.langueButton}>EN</button>}
             <Menu />
           </div>
         </div>

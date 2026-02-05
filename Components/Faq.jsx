@@ -15,17 +15,17 @@ export default function Questions() {
   <div className={styles.listeQuestion}>
                 <div className={styles.question} onClick={() => setQ1(!Q1)}>
                   <label className={styles.q} onClick={() => setQ1(!Q1)}>▼  Q: Est‑ce vraiment permanent ?</label>
-                  <label className={`${Q1 ? styles.questionO : styles.questionC}`} >R: Oui, l’électrolyse est la seule méthode d’épilation officiellement reconnue comme permanente.</label>
+                  <label className={`${Q1 ? styles.questionO : styles.questionC}`} >R: Oui, l’électrolyse est la seule méthode d’épilation officiellement reconnue comme permanente. L’épilation au laser permet la réduction permanent de la pilosité mais ses résultats peuvent variés selon le type de poils et de peau. Bien qu’une seule technologie puisse suffire, la combinaison des deux peut être recommandé afin d’obtenir des résultats complets et durables.</label>
                 </div>
                
                 <div className={styles.question} onClick={() => setQ2(!Q2)}>
                   <label className={styles.q} onClick={() => setQ2(!Q2)}>▼  Q: Combien de séances vais‑je devoir faire ?</label>
                   <label className={`${Q2 ? styles.questionO : styles.questionC}`} >R: Chaque personne est unique, et le nombre de séances dépend de plusieurs facteurs : type de poils, zone traitée, 
-                    historique d’épilation, variations hormonales, etc. Une évaluation personnalisée permet d’établir un plan adapté et réaliste.</label>
+                    historique d’épilation, la technologie utilisée, variations hormonales, etc. Une évaluation personnalisée permet d’établir un plan adapté de traitement et réaliste.</label>
                 </div>
                 <div className={styles.question} onClick={() => setQ6(!Q6)}>
                   <label className={styles.q} onClick={() => setQ6(!Q6)}>▼  Q: À quel rythme devrais-je revenir ?</label>
-                  <label className={`${Q6 ? styles.questionO : styles.questionC}`} >R: La plupart des clients reviennent toutes les 1 à 4 semaines pendant quelques mois, selon la zone et la vitesse de repousse.</label>
+                  <label className={`${Q6 ? styles.questionO : styles.questionC}`} >R: La plupart des clients reviennent toutes les 1 à 6 semaines pendant quelques mois, selon la techonologie utilisée, votre rythme et les recommandations de la technicienne..</label>
                 </div>
                 <div className={styles.question} onClick={() => setQ3(!Q3)}>
                   <label className={styles.q} onClick={() => setQ3(!Q3)}>▼  Q: Est‑ce douloureux ?</label>
