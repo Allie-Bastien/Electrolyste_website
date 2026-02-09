@@ -184,6 +184,7 @@
   }
   .main {
     gap: 0px;
+    padding-top: -5vw;
   }
 }
 
