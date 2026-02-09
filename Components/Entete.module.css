@@ -80,9 +80,9 @@
 @media (max-width: 700px) {
   .header {
     position: absolute;
-    margin-top: -27vw;
+    margin-top: -30vw;
     margin-left: none;
-    top: 27vw;
+    top: 30vw;
   }
   .headerContent {
     padding-left: 5vw;
