@@ -45,31 +45,31 @@ export default function Home() {
           <div className={styles.paragraphType4}>
             <h2 className={styles.title}>Clarea se spécialise dans l’épilation définitive.</h2>
             <div className={styles.paragraphType4}>
-              <p className={styles.texteblack}> Deux des technologies les plus performantes de l’industrie y sont
-                utilisées pour atteindre vos objectifs : l’électrolyse de précision, pour
-                un travail minutieux poil par poil, et l’épilation au laser, pour les zones
-                plus étendues et des résultats rapides.
+              <p className={styles.texteblack}> Grâce à l’électrolyse de précision et au laser, nous adaptons chaque traitement pour
+des résultats durables, sécuritaires et respectueux de votre peau.
               </p>
               <p className={styles.texteblack}>
-                Deux approches complémentaires, un même standard : des traitements
-                complets, sécuritaires et respectueux de votre peau.
+                Une seule technologie peut suffire, mais leur combinaison peut accélérer le traitement
+et améliorer les résultats à long terme.
+La meilleure approche est définie lors de votre consultation.
               </p>
               
             </div>
           </div>
         <div className={styles.paragraphType1}>
-            <p id="Électrolyse au microscope" className={styles.texte}> 
+            <p id="Elec" className={styles.texte}> 
               Bien qu’une seule des technologies puisse suffire pour atteindre vos
               objectifs, il est parfois judicieux de les combiner afin d’accélérer le
               processus et d’obtenir des résultats complets et durables. Une stratégie
               adaptée à votre cas sera proposée lors de la consultation. 
             </p>
-            <h2 className={styles.title2}>Pourquoi choisir l'électrolyse?</h2>
-            <p className={styles.texte}>Voici quelques situations fréquentes dans lesquelles l’électrolyse peut être recommandée :</p>
+            <h2 className={styles.title2}>L’électrolyse
+</h2>
+            <p className={styles.texte}>est recommandée pour :</p>
             <ul className={styles.liste}>
               <li>Pilosité liée à des variations hormonales (grossesse, ménopause, SOPK/PCOS, hirsutisme et autres)</li>
               <li>Transition/affirmation de genre</li>
-              <li>Finition après des traitements au laser (poils blancs, pâles ou fins résistants au laser)</li>
+              <li>Poils résistants au laser (blancs, pâles ou très fins)</li>
               <li>Contre-indications au laser (médications, phototypes non compatibles, etc.)</li>
               <li>Poils isolés sur des zones sensibles ou très sculptées (ex. mamelon, arcade sourcilière, etc.)</li>
             </ul>
@@ -85,21 +85,20 @@ export default function Home() {
               racine du poil est ciblée pour empêcher
               sa repousse.
             </p>
-            <h2 className={styles.title2}>Pourquoi choisir le laser?</h2>
+            <h2 id="Laser" className={styles.title2}>Le laser</h2>
+            <p className={styles.texte}>est idéal pour :</p>
             <ul className={styles.liste}>
-              <li>Réduction rapide de la pilosité sur les grandes zones</li>
-              <li>Poils foncés sur peau claire (cas idéal pour l’absorption du laser)</li>
-              <li>Complément avant l’électrolyse pour réduire la densité de la pilosité </li>
-              <li>Transition / affirmation de genre</li>
-              <li>Folliculites ou poils incarnés</li>
+              <li>Réduire rapidement la pilosité sur les grandes zones</li>
+              <li>Poils foncés sur peau claire à moyennement foncée</li>
+              <li>Diminuer la densité avant un traitement d’électrolyse </li>
+              <li>Transition ou affirmation de genre</li>
+              <li>Folliculites et poils incarnés</li>
               <li>Irritation suite au rasage ou à l’épilation à la cire</li>
             </ul>
             <p className={styles.texte}>
-              Le laser permet de traiter un grand nombre de poils simultanément, ce qui réduit rapidement la densité et la
-              fréquence de repousse. Chez Clarea, l’appareil LightSheer de Lumenis est utilisé, une technologie éprouvée et
-              reconnue pour offrir des résultats constants et rapides en épilation laser. Ce laser diode est optimisé pour les
-              phototypes 1 à 4 sur l’échelle de Fitzpatrick, avec une excellente absorption sur les poils foncés et les
-              peaux claires à moyennement foncées.
+              Le laser traite simultanément un grand nombre de poils, réduisant rapidement la densité
+              et la repousse, grâce à la technologie LightSheer de Lumenis, un laser diode adapté
+              aux phototypes 1 à 4 selon l’échelle de Fitzpatrick. 
             </p>
         </div>
         

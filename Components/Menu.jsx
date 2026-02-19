@@ -14,8 +14,11 @@ export default function DropdownMenu() {
       />
       
         <div className={`${open ? styles.open : styles.menu}`}>
-          <Link href="/" className={styles.menuItem} onClick={open ? () => setOpen(false) : null}>
-            La microtrolyse
+          <Link href="/#Elec" className={styles.menuItem} onClick={open ? () => setOpen(false) : null}>
+            L'électrolyse
+          </Link>
+          <Link href="/#Laser" className={styles.menuItem} onClick={open ? () => setOpen(false) : null}>
+            L'épilation au laser
           </Link>
           <Link href="/#FAQ" className={styles.menuItem} onClick={open ? () => setOpen(false) : null}>
             Questions/Réponses
