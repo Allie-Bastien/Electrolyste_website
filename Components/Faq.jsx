@@ -21,15 +21,15 @@ export default function Questions() {
                 <div className={styles.question} onClick={() => setQ2(!Q2)}>
                   <label className={styles.q} onClick={() => setQ2(!Q2)}>▼  Q: Combien de séances vais‑je devoir faire ?</label>
                   <label className={`${Q2 ? styles.questionO : styles.questionC}`} >R: Chaque personne est unique, et le nombre de séances dépend de plusieurs facteurs : type de poils, zone traitée, 
-                    historique d’épilation, la technologie utilisée, variations hormonales, etc. Une évaluation personnalisée permet d’établir un plan adapté de traitement et réaliste.</label>
+                    historique d’épilation, la technologie utilisée, variations hormonales, etc. Une évaluation personnalisée permet d’établir un plan adapté et réaliste.</label>
                 </div>
                 <div className={styles.question} onClick={() => setQ6(!Q6)}>
                   <label className={styles.q} onClick={() => setQ6(!Q6)}>▼  Q: À quel rythme devrais-je revenir ?</label>
-                  <label className={`${Q6 ? styles.questionO : styles.questionC}`} >R: La plupart des clients reviennent toutes les 1 à 6 semaines pendant quelques mois, selon la techonologie utilisée, votre rythme et les recommandations de la technicienne..</label>
+                  <label className={`${Q6 ? styles.questionO : styles.questionC}`} >R: La plupart des clients reviennent toutes les 1 à 6 semaines pendant quelques mois, selon la techonologie utilisée, votre rythme et les recommandations de la technicienne.</label>
                 </div>
                 <div className={styles.question} onClick={() => setQ3(!Q3)}>
                   <label className={styles.q} onClick={() => setQ3(!Q3)}>▼  Q: Est‑ce douloureux ?</label>
-                  <label className={`${Q3 ? styles.questionO : styles.questionC}`} >R: Vous pouvez ressentir une légère chaleur ou un picotement, mais le traitement est généralement très bien toléré.</label>
+                  <label className={`${Q3 ? styles.questionO : styles.questionC}`} >R: Vous pourriez ressentir une légère chaleur ou quelques picotements, mais le traitement est généralement très bien toléré. Dans certains cas, l'application de la crème anesthésique peut être recommandée afin d'améliorer le confort.</label>
                 </div>
                 <div className={styles.question} onClick={() => setQ4(!Q4)}>
                   <label className={styles.q} onClick={() => setQ4(!Q4)}>▼  Q: Est-ce efficace sur les poils clairs, roux ou blancs?</label>

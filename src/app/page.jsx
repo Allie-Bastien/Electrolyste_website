@@ -3,6 +3,7 @@ import Entete from "../../Components/Entete";
 import RDV from "../../Components/RDV";
 import Faq from "../../Components/Faq";
 import Link from "next/link";
+import Maps from "../../Components/Maps";
 
 
 export const metadata = {
@@ -134,38 +135,105 @@ La meilleure approche est définie lors de votre consultation.
             <Faq></Faq>
           
             <h2 id="Tarifs" className={styles.title2}>Tarifs</h2>
+            <h2 className={styles.title3}>Mise à jour des tarifs — 1er septembre 2026</h2>
+            <p className={styles.texteblack}>À compter du 1er septembre 2026, mes tarifs seront ajustés pour l’ensemble de la clientèle.
+
+Cette mise à jour me permettra de continuer à vous offrir des traitements minutieux, sécuritaires et personnalisés, tout en tenant compte de l’évolution des coûts liés à ma pratique.
+
+Si cette augmentation représente une difficulté pour vous, particulièrement dans le cadre d’un traitement déjà commencé, n’hésitez pas à m’en parler. Nous pourrons regarder ensemble les options possibles, et il me fera plaisir de faire preuve de flexibilité lorsque la situation le permet.</p>
+
             <h2 className={styles.title3}>Électrolyse au microscope</h2>
-            <ul className={styles.liste}>
-              <li>15 min – 50$</li>
-              <li>30 min – 60$</li>
-              <li>45 min – 75$</li>
-              <li>60 min – 90$</li>
-              <li>90 min – 140$</li>
+            <ul className={styles.colone}>
+              <ul className={styles.liste}>
+                <li>Durée</li>
+                <li>15 min </li>
+                <li>30 min </li>
+                <li>45 min </li>
+                <li>60 min </li>
+                <li>90 min </li>
+              </ul>
+              <ul className={styles.liste2}>
+                <li>Tarif actuel</li>
+                <li> 50$</li>
+                <li> 60$</li>
+                <li> 75$</li>
+                <li> 90$</li>
+                <li> 140$</li>
+              </ul>
+              <ul className={styles.liste2}>
+                <li>Nouveau Tarif</li>
+                <li> 50$</li>
+                <li> 70$</li>
+                <li> 90$</li>
+                <li> 110$</li>
+                <li> 150$</li>
+              </ul>
             </ul>
             <h2 className={styles.title3}>Épilation au laser</h2>
+           
+           <ul className={styles.colone}>
             <ul className={styles.liste}>
-              <li>Petite zone – 50$
-                <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
-              </li>
-              <li>Zone moyenne – 80$
-              <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
-              </li>
-              <li>Grande zone – 110$
-              <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
-              </li>
-              <li>Très grande zone – 140$
-              <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>
-              </li>
+              <li>Zone
+                  <li className={styles.noDot}></li>
+                <li>Petite zone 
+                  <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
+                </li>
+                <li>Zone moyenne 
+                  <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
+                </li>
+                <li>Grande zone 
+                  <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
+                </li>
+                <li>Très grande zone
+                  <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>
+                </li>
+                </li>
+              </ul>
+              <ul className={styles.liste}>
+                  <li>Tarif actuel</li>
+                  <li> 50$</li>
+                  <li className={styles.noDot}></li>
+                  <li> 80$</li>
+                  <li className={styles.noDot}></li>
+                  <li> 110$</li>
+                  <li className={styles.noDot}></li>
+                  <li> 140$</li>
+                  <li className={styles.noDot}></li>
+              </ul>
+              <ul className={styles.liste}>
+                  <li>Nouveau Tarif</li>
+                  <li> 50$</li>
+                  <li className={styles.noDot}></li>
+                  <li> 90$</li>
+                  <li className={styles.noDot}></li>
+                  <li> 125$</li>
+                  <li className={styles.noDot}></li>
+                  <li> 165$</li>
+                </ul>
             </ul>
-
+              
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
             <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains
               traitements peuvent être refusés à la discrétion de l’électrolyste.
             </p>
+            <p className={styles.texteBlack}>Pour les très grandes zones : le tarif peut varier selon la superficie, la densité du poil et le temps de traitement requis. Le prix vous sera toujours confirmé avant le traitement.</p>
+
+            <h2 className={styles.title3}>Les tarifs actuels demeureront en vigueur jusqu’au 31 août 2026 inclusivement.</h2>
+
+            <p classsName={styles.texteBlack}>Merci de votre compréhension et de votre confiance.
+
+</p>
         </div>
 
 
       <div id="Contact" className={styles.paragraphType3}>
+        <h2 className={styles.title2}>Disponibilité</h2>
+        <label className={styles.infoDesc}>*Par rendez-vous seulement  </label>
+        <ul>
+          <li className={styles.texteblack}>Lundi : 17 h à 22 h</li>
+          <li className={styles.texteblack}>Jeudi : 17 h à 22 h</li>
+          <li className={styles.texteblack}>Samedi : 10 h à 18 h</li>
+        </ul>
         <h2 className={styles.title2}>Contact</h2>
         <ul>
           <li className={styles.infoliste}>
@@ -182,13 +250,7 @@ La meilleure approche est définie lors de votre consultation.
             <Link className={styles.texte} href="https://www.cliniqueneva.com/"> (Clinique Neva)</Link>
           </li>
         </ul>
-        <h2 className={styles.title2}>Disponibilité</h2>
-        <label className={styles.infoDesc}>*Par rendez-vous seulement  </label>
-        <ul>
-          <li className={styles.texteblack}>Lundi : 17 h à 22 h</li>
-          <li className={styles.texteblack}>Jeudi : 17 h à 22 h</li>
-          <li className={styles.texteblack}>Samedi : 10 h à 18 h</li>
-        </ul>
+        <Maps></Maps>
       </div>
 
       <div className={styles.containerRdv}>
