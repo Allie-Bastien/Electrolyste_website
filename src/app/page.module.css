@@ -85,7 +85,7 @@
   list-style-type: none;
   gap: 10px;
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
 }
 .title3 {
   color: dimgray;
@@ -311,7 +311,12 @@
   color: dimgray;
   padding: 5px;
 }
-
+.texteGrand {
+  color: dimgray;
+  padding: 5px;
+  Max-width: 800px;
+  text-align: center;
+}
 .texteSous {
   color: dimgray;
   padding: 5px;
@@ -375,10 +380,20 @@
 }
 
 .infoDesc {
-  font-weight: bold;
   color: dimgray;
   font-size: 18px;
   margin-bottom: 10px;
+}
+.infoLink {
+  font-weight: bold;
+  text-decoration: underline;
+  color: dimgray;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.infoLink:hover {
+  text-decoration: none;
+  color: gray;
 }
 
 a.primary {

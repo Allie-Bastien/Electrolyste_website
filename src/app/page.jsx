@@ -49,43 +49,37 @@ export default function Home() {
               <p className={styles.texteblack}> Grâce à l’électrolyse de précision et au laser, nous adaptons chaque traitement pour
 des résultats durables, sécuritaires et respectueux de votre peau.
               </p>
-              <p className={styles.texteblack}>
-                Une seule technologie peut suffire, mais leur combinaison peut accélérer le traitement
-et améliorer les résultats à long terme.
-La meilleure approche est définie lors de votre consultation.
-              </p>
+              <div className={styles.containerRdv}>
+                <RDV></RDV>
+              </div>
               
             </div>
           </div>
         <div className={styles.paragraphType1}>
             <p id="Elec" className={styles.texte}> 
-              Bien qu’une seule des technologies puisse suffire pour atteindre vos
-              objectifs, il est parfois judicieux de les combiner afin d’accélérer le
-              processus et d’obtenir des résultats complets et durables. Une stratégie
-              adaptée à votre cas sera proposée lors de la consultation. 
+              Bien qu’une seule de ces technologies puisse suffire, leur combinaison peut
+              accélérer le traitement et améliorer les résultats à long terme. La meilleure
+              approche est définie lors de votre consultation.
             </p>
             <h2 className={styles.title2}>L’électrolyse
 </h2>
             <p className={styles.texte}>est recommandée pour :</p>
             <ul className={styles.liste}>
-              <li>Pilosité liée à des variations hormonales (grossesse, ménopause, SOPK/PCOS, hirsutisme et autres)</li>
-              <li>Transition/affirmation de genre</li>
-              <li>Poils résistants au laser (blancs, pâles ou très fins)</li>
+              <li>Pilosité liée à des variations hormonales (grossesse, ménopause, certaines médications ou contraceptifs);</li>
+              <li>Hirsutisme, SOPK/PCOS ou SMOP : syndrome métabolique ovarien polyendocrinien;</li>
+              <li>Transition/affirmation de genre;</li>
+              <li>Poils résistants au laser (blancs, pâles ou très fins);</li>
               <li>Contre-indications au laser (médications, phototypes non compatibles, etc.)</li>
               <li>Poils isolés sur des zones sensibles ou très sculptées (ex. mamelon, arcade sourcilière, etc.)</li>
             </ul>
             <p className={styles.texte}>
-              L’électrolyse permet de traiter chaque poil
-              individuellement et de manière définitive.
-              Chez Clarea, l’épilateur Elite Spectrum
-              d’Instantron est utilisé en combinaison
-              avec un microscope chirurgical Zeiss
-              pour un traitement d’une grande
-              précision. À l’aide d’un filament stérile,
-              jetable et changé à chaque session, la
-              racine du poil est ciblée pour empêcher
-              sa repousse.
+              L’électrolyse permet de traiter chaque poil individuellement de manière
+              définitive. Chez CLAREA, l’épilateur Elite Spectrum d’Instantron est utilisé en
+              ombinaison avec un microscope chirurgical Zeiss pour un traitement d’une
+              grande précision. À l’aide d’un filament stérile, jetable et changé à chaque
+              session, la racine du poil est ciblée pour empêcher sa repousse.
             </p>
+
             <h2 id="Laser" className={styles.title2}>Le laser</h2>
             <p className={styles.texte}>est idéal pour :</p>
             <ul className={styles.liste}>
@@ -145,7 +139,7 @@ Si cette augmentation représente une difficulté pour vous, particulièrement d
             <h2 className={styles.title3}>Électrolyse au microscope</h2>
             <ul className={styles.colone}>
               <ul className={styles.liste}>
-                <li>Durée</li>
+                <li>Durée du traitement </li>
                 <li>15 min </li>
                 <li>30 min </li>
                 <li>45 min </li>
@@ -153,15 +147,7 @@ Si cette augmentation représente une difficulté pour vous, particulièrement d
                 <li>90 min </li>
               </ul>
               <ul className={styles.liste2}>
-                <li>Tarif actuel</li>
-                <li> 50$</li>
-                <li> 60$</li>
-                <li> 75$</li>
-                <li> 90$</li>
-                <li> 140$</li>
-              </ul>
-              <ul className={styles.liste2}>
-                <li>Nouveau Tarif</li>
+                <li> Prix</li>
                 <li> 50$</li>
                 <li> 70$</li>
                 <li> 90$</li>
@@ -171,47 +157,37 @@ Si cette augmentation représente une difficulté pour vous, particulièrement d
             </ul>
             <h2 className={styles.title3}>Épilation au laser</h2>
            
-           <ul className={styles.colone}>
+           
             <ul className={styles.liste}>
-              <li>Zone
-                  <li className={styles.noDot}></li>
-                <li>Petite zone 
-                  <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
-                </li>
-                <li>Zone moyenne 
-                  <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
-                </li>
-                <li>Grande zone 
-                  <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
-                </li>
-                <li>Très grande zone
-                  <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>
-                </li>
-                </li>
+              <ul className={styles.colone}>
+                <li>Zone - </li>
+                <li>Prix</li>
               </ul>
-              <ul className={styles.liste}>
-                  <li>Tarif actuel</li>
-                  <li> 50$</li>
-                  <li className={styles.noDot}></li>
-                  <li> 80$</li>
-                  <li className={styles.noDot}></li>
-                  <li> 110$</li>
-                  <li className={styles.noDot}></li>
-                  <li> 140$</li>
-                  <li className={styles.noDot}></li>
+              <ul className={styles.colone}>
+                <li>Petite zone - </li>
+                <li> 50$ </li>
               </ul>
-              <ul className={styles.liste}>
-                  <li>Nouveau Tarif</li>
-                  <li> 50$</li>
-                  <li className={styles.noDot}></li>
-                  <li> 90$</li>
-                  <li className={styles.noDot}></li>
-                  <li> 125$</li>
-                  <li className={styles.noDot}></li>
-                  <li> 165$</li>
-                </ul>
+              <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
+                
+              <ul className={styles.colone}>
+                <li>Zone moyenne - </li>
+                <li> 90$</li>
+              </ul>
+              <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
+                
+              <ul className={styles.colone}>
+                <li>Grande zone - </li>
+                <li > 125$</li>
+              </ul>
+              <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
+                
+              <ul className={styles.colone}>
+                <li>Très grande zone - </li>
+                <li> 165$</li>
+              </ul>
+              <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>              
             </ul>
-              
+
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
             <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains
               traitements peuvent être refusés à la discrétion de l’électrolyste.
@@ -220,37 +196,36 @@ Si cette augmentation représente une difficulté pour vous, particulièrement d
 
             <h2 className={styles.title3}>Les tarifs actuels demeureront en vigueur jusqu’au 31 août 2026 inclusivement.</h2>
 
-            <p classsName={styles.texteBlack}>Merci de votre compréhension et de votre confiance.
+            <p class  Name={styles.texteBlack}>Merci de votre compréhension et de votre confiance.
 
 </p>
         </div>
 
 
       <div id="Contact" className={styles.paragraphType3}>
-        <h2 className={styles.title2}>Disponibilité</h2>
-        <label className={styles.infoDesc}>*Par rendez-vous seulement  </label>
-        <ul>
-          <li className={styles.texteblack}>Lundi : 17 h à 22 h</li>
-          <li className={styles.texteblack}>Jeudi : 17 h à 22 h</li>
-          <li className={styles.texteblack}>Samedi : 10 h à 18 h</li>
-        </ul>
-        <h2 className={styles.title2}>Contact</h2>
-        <ul>
-          <li className={styles.infoliste}>
-            <label className={styles.infoName}>Courriel :</label>
-            <Link className={styles.texte} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</Link>
-          </li>
-          <li className={styles.infoliste}>
-            <label className={styles.infoName}>Texte/appel : </label>
-            <label className={styles.texte}>819-743-9210</label>
-          </li>
-          <li className={styles.infoliste}>
-            <label className={styles.infoName}>Adresse :</label>
-            <Link className={styles.texte} href="https://www.google.com/maps/place/1121+Rue+de+Bellechasse,+Montréal,+QC+H2S+1Y5/@45.5368223,-73.6007689,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc9196632bd8e8b:0xa4f58f43cfb19c9e!8m2!3d45.5368223!4d-73.5981886!16s%2Fg%2F11nntq80_f?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D">1121 Rue de Bellechasse, Montréal, QC H2S 1Y5</Link>
-            <Link className={styles.texte} href="https://www.cliniqueneva.com/"> (Clinique Neva)</Link>
-          </li>
-        </ul>
+        <h2 className={styles.title2}>Rendez-vous et coordonnées</h2>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>CLAREA est située à la </span> 
+          <span className={styles.infoLink} href="https://www.cliniqueneva.com/">Clinique Néva</span>
+          <span className={styles.infoDesc}>, au </span> 
+          <span className={styles.infoLink} href="https://www.google.com/maps/place/1121+Rue+de+Bellechasse,+Montréal,+QC+H2S+1Y5/@45.5368223,-73.6007689,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc9196632bd8e8b:0xa4f58f43cfb19c9e!8m2!3d45.5368223!4d-73.5981886!16s%2Fg%2F11nntq80_f?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D">1121 Rue de Bellechasse, Montréal, QC H2S 1Y5</span>
+        </p>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>Les plages horaires habituelles sont les lundis et jeudis de 17 h à 21 h, ainsi que les samedis de 10 h à 18 h.</span>
+        </p>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>Tous les traitements sont obligatoirement précédés d’une consultation
+gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
+être demandé afin de confirmer la réservation.</span>
+        </p>
+
         <Maps></Maps>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>Tous les rendez-vous doivent être pris directement sur la plateforme
+          GOrendezvous en cliquant sur le bouton ci-dessous. Pour toute question,
+          vous pouvez également communiquer avec moi par courriel :</span>
+          <span className={styles.infoLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</span>
+        </p>
       </div>
 
       <div className={styles.containerRdv}>
