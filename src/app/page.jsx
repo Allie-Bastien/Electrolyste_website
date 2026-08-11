@@ -129,13 +129,6 @@ des résultats durables, sécuritaires et respectueux de votre peau.
             <Faq></Faq>
           
             <h2 id="Tarifs" className={styles.title2}>Tarifs</h2>
-            <h2 className={styles.title3}>Mise à jour des tarifs — 1er septembre 2026</h2>
-            <p className={styles.texteblack}>À compter du 1er septembre 2026, mes tarifs seront ajustés pour l’ensemble de la clientèle.
-
-Cette mise à jour me permettra de continuer à vous offrir des traitements minutieux, sécuritaires et personnalisés, tout en tenant compte de l’évolution des coûts liés à ma pratique.
-
-Si cette augmentation représente une difficulté pour vous, particulièrement dans le cadre d’un traitement déjà commencé, n’hésitez pas à m’en parler. Nous pourrons regarder ensemble les options possibles, et il me fera plaisir de faire preuve de flexibilité lorsque la situation le permet.</p>
-
             <h2 className={styles.title3}>Électrolyse au microscope</h2>
             <ul className={styles.colone}>
               <ul className={styles.liste}>
@@ -192,13 +185,6 @@ Si cette augmentation représente une difficulté pour vous, particulièrement d
             <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains
               traitements peuvent être refusés à la discrétion de l’électrolyste.
             </p>
-            <p className={styles.texteBlack}>Pour les très grandes zones : le tarif peut varier selon la superficie, la densité du poil et le temps de traitement requis. Le prix vous sera toujours confirmé avant le traitement.</p>
-
-            <h2 className={styles.title3}>Les tarifs actuels demeureront en vigueur jusqu’au 31 août 2026 inclusivement.</h2>
-
-            <p class  Name={styles.texteBlack}>Merci de votre compréhension et de votre confiance.
-
-</p>
         </div>
 
 
@@ -230,8 +216,6 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
         <RDV></RDV>
        </div>
       </div>
-
-      
 
     </main>
     <footer className={styles.footer}>
