@@ -226,11 +226,12 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
           vous pouvez également communiquer avec moi par courriel :</span>
           <span className={styles.infoLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</span>
         </p>
-      </div>
-
       <div className={styles.containerRdv}>
         <RDV></RDV>
+       </div>
       </div>
+
+      
 
     </main>
     <footer className={styles.footer}>
