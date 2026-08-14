@@ -4,6 +4,7 @@ import RDV from "../../Components/RDV";
 import Faq from "../../Components/Faq";
 import Link from "next/link";
 import Maps from "../../Components/Maps";
+import NotFound from "../../Components/NotFound";
 
 
 export const metadata = {
@@ -205,7 +206,7 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
 être demandé afin de confirmer la réservation.</span>
         </p>
 
-        <Maps></Maps>
+        {/* <Maps></Maps> */}
         <p className={styles.texteGrand}>
           <span className={styles.infoDesc}>Tous les rendez-vous doivent être pris directement sur la plateforme
           GOrendezvous en cliquant sur le bouton ci-dessous. Pour toute question,
@@ -219,7 +220,13 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
 
     </main>
     <footer className={styles.footer}>
-        
+        <label className={styles.FooterLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</label>
+        <div className={styles.colone}>
+          
+          <label className={styles.FooterText}>© 2026 Clarea · </label>
+          <Link className={styles.FooterLink} href="/Confidentialite">Politique de confidentialité</Link>
+
+        </div>
     </footer>
   </div>
   );
