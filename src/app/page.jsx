@@ -131,55 +131,81 @@ des résultats durables, sécuritaires et respectueux de votre peau.
           
             <h2 id="Tarifs" className={styles.title2}>Tarifs</h2>
             <h2 className={styles.title3}>Électrolyse au microscope</h2>
-            <ul className={styles.colone}>
-              <ul className={styles.liste}>
-                <li>Durée du traitement </li>
-                <li>15 min </li>
-                <li>30 min </li>
-                <li>45 min </li>
-                <li>60 min </li>
-                <li>90 min </li>
-              </ul>
-              <ul className={styles.liste2}>
-                <li> Prix</li>
-                <li> 50$</li>
-                <li> 70$</li>
-                <li> 90$</li>
-                <li> 110$</li>
-                <li> 150$</li>
-              </ul>
+            
+            <ul className={styles.liste}>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>Durée du traitement </li>
+                  <li>Prix</li>
+                </ul>
+              </div>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>15 min </li>
+                  <li> 50$</li>
+                </ul>
+              </div>
+                <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>30 min </li>
+                  <li> 70$</li>
+                </ul>
+              </div>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>45 min </li>
+                  <li> 90$</li>
+                </ul>
+              </div>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>60 min </li>
+                  <li> 110$</li>
+                </ul>
+              </div>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>90 min </li>
+                  <li> 150$</li>
+                </ul>
+              </div>
             </ul>
             <h2 className={styles.title3}>Épilation au laser</h2>
-           
-           
             <ul className={styles.liste}>
-              <ul className={styles.colone}>
-                <li>Zone - </li>
-                <li>Prix</li>
-              </ul>
-              <ul className={styles.colone}>
-                <li>Petite zone - </li>
-                <li> 50$ </li>
-              </ul>
-              <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
-                
-              <ul className={styles.colone}>
-                <li>Zone moyenne - </li>
-                <li> 90$</li>
-              </ul>
-              <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
-                
-              <ul className={styles.colone}>
-                <li>Grande zone - </li>
-                <li > 125$</li>
-              </ul>
-              <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
-                
-              <ul className={styles.colone}>
-                <li>Très grande zone - </li>
-                <li> 165$</li>
-              </ul>
-              <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>              
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>Zone - </li>
+                  <li>Prix</li>
+                </ul>
+                </div>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>Petite zone - </li>
+                  <li> 50$ </li>
+                </ul>
+                <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
+              </div>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>Zone moyenne - </li>
+                  <li> 90$</li>
+                </ul>
+                <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
+              </div>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>Grande zone - </li>
+                  <li > 125$</li>
+                </ul>
+              </div>
+                <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
+              <div className={styles.listeUnderlined}>
+                <ul className={styles.colone}>
+                  <li>Très grande zone - </li>
+                  <li> 165$</li>
+                </ul>
+                <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>   
+              </div>           
             </ul>
 
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
@@ -190,7 +216,7 @@ des résultats durables, sécuritaires et respectueux de votre peau.
 
 
       <div id="Contact" className={styles.paragraphType3}>
-        <h2 className={styles.title2}>Rendez-vous et coordonnées</h2>
+        <h2 className={styles.title2}>Coordonnées</h2>
         <p className={styles.texteGrand}>
           <span className={styles.infoDesc}>CLAREA est située à la </span> 
           <span className={styles.infoLink} href="https://www.cliniqueneva.com/">Clinique Néva</span>
@@ -213,6 +239,7 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
           vous pouvez également communiquer avec moi par courriel :</span>
           <span className={styles.infoLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</span>
         </p>
+        <h2 className={styles.title2}>Rendez-vous</h2>
       <div className={styles.containerRdv}>
         <RDV></RDV>
        </div>

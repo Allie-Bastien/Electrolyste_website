@@ -82,9 +82,13 @@
 .colone {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
+  justify-content: space-between;
   gap: 10px;
   width: 100%;
+  max-width: 300px;
+}
+.listeUnderlined {
+  border-bottom: 1px solid lightgray;
   max-width: 300px;
 }
 .title3 {
