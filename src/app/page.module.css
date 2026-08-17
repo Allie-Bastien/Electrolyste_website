@@ -418,6 +418,7 @@ a.secondary {
   justify-content: space-between;
   margin-left: 20px;
   gap: 24px;
+  max-height: 15px;
 }
 
 .FooterText {
