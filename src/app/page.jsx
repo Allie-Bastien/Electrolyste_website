@@ -237,7 +237,7 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
           <span className={styles.infoDesc}>Tous les rendez-vous doivent être pris directement sur la plateforme
           GOrendezvous en cliquant sur le bouton ci-dessous. Pour toute question,
           vous pouvez également communiquer avec moi par courriel :</span>
-          <span className={styles.infoLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</span>
+          <Link className={styles.infoLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</Link>
         </p>
         <h2 className={styles.title2}>Rendez-vous</h2>
       <div className={styles.containerRdv}>
@@ -247,7 +247,7 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
 
     </main>
     <footer className={styles.footer}>
-        <label className={styles.FooterLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</label>
+        <Link className={styles.FooterLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</Link>
         <div className={styles.colone}>
           
           <label className={styles.FooterText}>© 2026 Clarea · </label>
