@@ -51,7 +51,7 @@ export default function Home() {
         <Entete/>
       </header>
       <main className={styles.main}>
-        <img src="Image site (1).jpg" className={styles.banner}></img>
+        <img src="Image site (1).jpg" alt="Clarea Électrolyse" className={styles.banner}></img>
           <div className={styles.paragraphType4}>
             <h2 className={styles.title}>Clarea se spécialise dans l’épilation définitive.</h2>
             <div className={styles.paragraphType4}>
@@ -141,66 +141,91 @@ des résultats durables, sécuritaires et respectueux de votre peau.
             <h2 className={styles.title3}>Électrolyse au microscope</h2>
             
             <table className={styles.tableau}>
-                  <tr>
-                    <th className={styles.listItemHeader}>Durée du traitement </th>
-                    <th className={styles.listItemHeader}>Prix</th>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>15 min </td>
-                    <td className={styles.listItem}> 50$</td>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>30 min </td>
-                    <td className={styles.listItem}> 70$</td>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>45 min </td>
-                    <td className={styles.listItem}> 90$</td>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>60 min </td>
-                    <td className={styles.listItem}> 110$</td>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>90 min </td>
-                    <td className={styles.listItem}> 150$</td>
-                  </tr>
-            </table>
+  <thead>
+    <tr>
+      <th className={styles.listItemHeader}>Durée du traitement</th>
+      <th className={styles.listItemHeader}>Prix</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td className={styles.listItem}>15 min</td>
+      <td className={styles.listItem}>50$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>30 min</td>
+      <td className={styles.listItem}>70$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>45 min</td>
+      <td className={styles.listItem}>90$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>60 min</td>
+      <td className={styles.listItem}>110$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>90 min</td>
+      <td className={styles.listItem}>150$</td>
+    </tr>
+  </tbody>
+  </table>
             <h2 className={styles.title3}>Épilation au laser</h2>
             <table className={styles.tableau}>
-              <tr>
-                <th className={styles.listItemHeader}>Zone </th>
-                <th className={styles.listItemHeader}>Prix</th>
-              </tr>
-                  <tr>
-                    <td className={styles.listItem}>
-                      <div>Petite zone </div>
-                      <div className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </div>
-                    </td>
-                    <td className={styles.listItem}> 50$ </td>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>
-                      <div>Zone moyenne </div>
-                      <div className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </div>
-                    </td>
-                    <td className={styles.listItem}> 90$</td>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>
-                      <div>Grande zone </div>
-                      <div className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </div>
-                    </td>
-                    <td className={styles.listItem}> 125$</td>
-                  </tr>
-                  <tr>
-                    <td className={styles.listItem}>
-                      <div>Très grande zone </div>
-                      <div className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </div>
-                    </td>
-                    <td className={styles.listItem}> 165$</td>
-                  </tr>
-            </table>
+  <thead>
+    <tr>
+      <th className={styles.listItemHeader}>Zone</th>
+      <th className={styles.listItemHeader}>Prix</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td className={styles.listItem}>
+        <div>Petite zone</div>
+        <div className={styles.texteblack}>
+          (ex : lèvre supérieure, menton, favoris, ligne du nombril…)
+        </div>
+      </td>
+      <td className={styles.listItem}>50$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>
+        <div>Zone moyenne</div>
+        <div className={styles.texteblack}>
+          (ex : nuque, cou, aisselles, bikini classique…)
+        </div>
+      </td>
+      <td className={styles.listItem}>90$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>
+        <div>Grande zone</div>
+        <div className={styles.texteblack}>
+          (ex : visage complet + cou, demi-jambes, bikini intégral, épaules…)
+        </div>
+      </td>
+      <td className={styles.listItem}>125$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>
+        <div>Très grande zone</div>
+        <div className={styles.texteblack}>
+          (ex : jambes complètes, dos, torse, etc.)
+        </div>
+      </td>
+      <td className={styles.listItem}>165$</td>
+    </tr>
+  </tbody>
+</table>
 
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
             <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains
