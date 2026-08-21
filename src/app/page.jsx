@@ -132,81 +132,67 @@ des résultats durables, sécuritaires et respectueux de votre peau.
             <h2 id="Tarifs" className={styles.title2}>Tarifs</h2>
             <h2 className={styles.title3}>Électrolyse au microscope</h2>
             
-            <ul className={styles.liste}>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>Durée du traitement </li>
-                  <li>Prix</li>
-                </ul>
-              </div>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>15 min </li>
-                  <li> 50$</li>
-                </ul>
-              </div>
-                <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>30 min </li>
-                  <li> 70$</li>
-                </ul>
-              </div>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>45 min </li>
-                  <li> 90$</li>
-                </ul>
-              </div>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>60 min </li>
-                  <li> 110$</li>
-                </ul>
-              </div>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>90 min </li>
-                  <li> 150$</li>
-                </ul>
-              </div>
-            </ul>
+            <table className={styles.tableau}>
+                  <tr>
+                    <th className={styles.listItemHeader}>Durée du traitement </th>
+                    <th className={styles.listItemHeader}>Prix</th>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>15 min </td>
+                    <td className={styles.listItem}> 50$</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>30 min </td>
+                    <td className={styles.listItem}> 70$</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>45 min </td>
+                    <td className={styles.listItem}> 90$</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>60 min </td>
+                    <td className={styles.listItem}> 110$</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>90 min </td>
+                    <td className={styles.listItem}> 150$</td>
+                  </tr>
+            </table>
             <h2 className={styles.title3}>Épilation au laser</h2>
-            <ul className={styles.liste}>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>Zone - </li>
-                  <li>Prix</li>
-                </ul>
-                </div>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>Petite zone - </li>
-                  <li> 50$ </li>
-                </ul>
-                <p className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </p>
-              </div>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>Zone moyenne - </li>
-                  <li> 90$</li>
-                </ul>
-                <p className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </p>
-              </div>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>Grande zone - </li>
-                  <li > 125$</li>
-                </ul>
-              </div>
-                <p className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </p>
-              <div className={styles.listeUnderlined}>
-                <ul className={styles.colone}>
-                  <li>Très grande zone - </li>
-                  <li> 165$</li>
-                </ul>
-                <p className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </p>   
-              </div>           
-            </ul>
+            <table className={styles.tableau}>
+              <tr>
+                <th className={styles.listItemHeader}>Zone </th>
+                <th className={styles.listItemHeader}>Prix</th>
+              </tr>
+                  <tr>
+                    <td className={styles.listItem}>
+                      <div>Petite zone </div>
+                      <div className={styles.texteblack}>(ex : lèvre supérieure, menton, favoris, ligne du nombril…) </div>
+                    </td>
+                    <td className={styles.listItem}> 50$ </td>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>
+                      <div>Zone moyenne </div>
+                      <div className={styles.texteblack}>(ex : nuque, cou, aisselles, bikini classique…) </div>
+                    </td>
+                    <td className={styles.listItem}> 90$</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>
+                      <div>Grande zone </div>
+                      <div className={styles.texteblack}>(ex : visage complet + cou, demi-jambes, bikini intégral, épaules…) </div>
+                    </td>
+                    <td className={styles.listItem}> 125$</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.listItem}>
+                      <div>Très grande zone </div>
+                      <div className={styles.texteblack}>(ex : jambes complètes, dos, torse, etc.) </div>
+                    </td>
+                    <td className={styles.listItem}> 165$</td>
+                  </tr>
+            </table>
 
             <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
             <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains
@@ -223,6 +209,7 @@ des résultats durables, sécuritaires et respectueux de votre peau.
           <span className={styles.infoDesc}>, au </span> 
           <span className={styles.infoLink} href="https://www.google.com/maps/place/1121+Rue+de+Bellechasse,+Montréal,+QC+H2S+1Y5/@45.5368223,-73.6007689,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc9196632bd8e8b:0xa4f58f43cfb19c9e!8m2!3d45.5368223!4d-73.5981886!16s%2Fg%2F11nntq80_f?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D">1121 Rue de Bellechasse, Montréal, QC H2S 1Y5</span>
         </p>
+        <h2 className={styles.title2}>Rendez-vous</h2>
         <p className={styles.texteGrand}>
           <span className={styles.infoDesc}>Les plages horaires habituelles sont les lundis et jeudis de 17 h à 21 h, ainsi que les samedis de 10 h à 18 h.</span>
         </p>
@@ -239,7 +226,6 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
           vous pouvez également communiquer avec moi par courriel :</span>
           <Link className={styles.infoLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</Link>
         </p>
-        <h2 className={styles.title2}>Rendez-vous</h2>
       <div className={styles.containerRdv}>
         <RDV></RDV>
        </div>

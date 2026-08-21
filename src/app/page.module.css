@@ -80,16 +80,15 @@
   padding: 30px;
 }
 .colone {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
+  justify-content: space-evenly;
   max-width: 300px;
 }
 .listeUnderlined {
   border-bottom: 1px solid lightgray;
-  max-width: 300px;
+  max-width: 350px;
 }
 .title3 {
   color: dimgray;
@@ -368,7 +367,28 @@
   padding: 10px;
 }
 
-
+.tableau {
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  border: 2px solid lightgray;
+}
+.listItem {
+  padding: 2.5px;
+  align-self: center;
+  text-align: center;
+  margin-top: 2.5px;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+.listItemHeader {
+  padding: 2.5px;
+  font-weight: bold;
+  color: dimgray;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
 .infoliste {
   color: dimgray;
   padding-bottom: 0px;
@@ -417,15 +437,13 @@ a.secondary {
   align-self: left;
   justify-content: space-between;
   margin-left: 20px;
-  gap: 24px;
-  max-height: 15px;
+  max-height: 10px;
 }
 
 .FooterText {
   color: dimgray;
   font-size: 14px;
   text-decoration: none;
-  margin-top: 10px;
   align-self: right;
 }
 .FooterLink{
@@ -433,13 +451,11 @@ a.secondary {
   font-size: 14px;
   text-decoration: none;
   align-self: right;
-  margin-top: 10px;
 }
 .FooterLink:hover {
   color: lightgray;
   font-size: 14px;
   text-decoration: underline;
-  margin-top: 10px;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
