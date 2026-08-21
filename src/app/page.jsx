@@ -219,7 +219,7 @@ gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
 être demandé afin de confirmer la réservation.</span>
         </p>
 
-        {/* <Maps></Maps> */}
+        <Maps></Maps>
         <p className={styles.texteGrand}>
           <span className={styles.infoDesc}>Tous les rendez-vous doivent être pris directement sur la plateforme
           GOrendezvous en cliquant sur le bouton ci-dessous. Pour toute question,
