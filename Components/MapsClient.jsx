@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   GoogleMap,
   InfoWindowF,
@@ -14,14 +14,14 @@ const containerStyle = {
 
 const defaultCenter = {
   lat: 45.5368223,
-  lng: -73.9030592,
+  lng: -73.5981886,
 };
 
 const MapsClient = () => {
-  const [selectedPlace, setSelectedPlace] = useState(null);
+  const markerRef = useRef(null);
 
-  const mapRef = useRef(null);
-  const markersRef = useRef([]);
+  const [selectedPlace, setSelectedPlace] =
+    useState(null);
 
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey:
@@ -29,87 +29,62 @@ const MapsClient = () => {
     libraries: ['marker'],
   });
 
-  const markers = useMemo(
-    () => [
-      {
-        lat: 45.5368223,
-        lng: -73.9030592,
-        name: 'Clinique Clarea',
-      },
-    ],
-    []
-  );
+  const handleMapLoad = async (map) => {
+    console.log('✅ MAP CREATED');
 
-  const handleMapLoad = (map) => {
-    mapRef.current = map;
-  };
+    try {
+      const AdvancedMarkerElement =
+        window.google.maps.marker?.AdvancedMarkerElement;
 
-  useEffect(() => {
-    if (!isLoaded || !mapRef.current) {
-      return;
-    }
+      if (!AdvancedMarkerElement) {
+        console.error(
+          '❌ AdvancedMarkerElement is NOT available'
+        );
+        return;
+      }
 
-    if (
-      !window.google ||
-      !window.google.maps ||
-      !window.google.maps.marker
-    ) {
-      console.error('Google Advanced Marker library was not loaded.');
-      return;
-    }
-
-    const AdvancedMarkerElement =
-      window.google.maps.marker.AdvancedMarkerElement;
-
-    // Remove existing markers
-    markersRef.current.forEach((marker) => {
-      marker.map = null;
-    });
-
-    markersRef.current = [];
-
-    markers.forEach((markerData) => {
-      const markerElement = document.createElement('div');
+      const markerElement =
+        document.createElement('div');
 
       markerElement.innerHTML = `
-        <div
-          style="
-            width: 32px;
-            height: 32px;
-            background: #268249;
-            border: 3px solid white;
-            border-radius: 50%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            cursor: pointer;
-          "
-        ></div>
+        <div style="
+          width: 22px;
+          height: 22px;
+          background-color: #268249;
+          border: 3px solid white;
+          border-radius: 50%;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+          cursor: pointer;
+        "></div>
       `;
 
       markerElement.addEventListener('click', () => {
-        setSelectedPlace(markerData);
+        setSelectedPlace({
+          lat: 45.5368223,
+          lng: -73.5981886,
+          name: 'Clinique Clarea',
+        });
       });
 
-      const marker = new AdvancedMarkerElement({
-        map: mapRef.current,
-        position: {
-          lat: markerData.lat,
-          lng: markerData.lng,
-        },
-        title: markerData.name,
-        content: markerElement,
-      });
+      markerRef.current =
+        new AdvancedMarkerElement({
+          map,
+          position: {
+            lat: 45.5368223,
+            lng: -73.5981886,
+          },
+          title: 'Clinique Clarea',
+          content: markerElement,
+        });
 
-      markersRef.current.push(marker);
-    });
-
-    return () => {
-      markersRef.current.forEach((marker) => {
-        marker.map = null;
-      });
-
-      markersRef.current = [];
-    };
-  }, [isLoaded, markers]);
+      console.log('✅ CLINIQUE MARKER CREATED');
+    } catch (error) {
+      console.error(
+        '❌ ERROR CREATING MARKER:',
+        error
+      );
+    }
+  };
 
   if (loadError) {
     return (
@@ -120,17 +95,22 @@ const MapsClient = () => {
   }
 
   if (!isLoaded) {
-    return <div>Loading Maps...</div>;
+    return (
+      <div>
+        Loading Maps...
+      </div>
+    );
   }
 
   return (
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={defaultCenter}
-      zoom={12}
+      zoom={15}
       onLoad={handleMapLoad}
       options={{
-        mapId: process.env.NEXT_PUBLIC_GOOGLE_MAP_ID,
+        mapId:
+          process.env.NEXT_PUBLIC_GOOGLE_MAP_ID,
       }}
     >
       {selectedPlace && (
@@ -139,11 +119,16 @@ const MapsClient = () => {
             lat: selectedPlace.lat,
             lng: selectedPlace.lng,
           }}
-          onCloseClick={() => setSelectedPlace(null)}
+          onCloseClick={() =>
+            setSelectedPlace(null)
+          }
         >
           <div style={{ padding: '5px' }}>
             <h2>{selectedPlace.name}</h2>
-            <p>More information here.</p>
+            <p>
+              1121 Rue de Bellechasse,
+              Montréal, QC H2S 1Y5
+            </p>
           </div>
         </InfoWindowF>
       )}
