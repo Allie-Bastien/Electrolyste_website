@@ -4,15 +4,7 @@ import RDV from "../../Components/RDV";
 import Faq from "../../Components/Faq";
 import Link from "next/link";
 import NotFound from "../../Components/NotFound";
-import dynamic from 'next/dynamic';
-
-const Maps = dynamic(
-  () => import('../../components/MapsClient'),
-  {
-    ssr: false,
-    loading: () => <p>Loading map...</p>,
-  }
-);
+import Maps from "../../Components/Maps";
 
 
 export const metadata = {
@@ -46,11 +38,234 @@ export const metadata = {
 
 export default function Home() {    
   return (
-      <div>
+    <div className={styles.page}>
+      <header >
+        <Entete/>
+      </header>
+      <main className={styles.main}>
+        <img src="Image site (1).jpg" alt="Clarea Électrolyse" className={styles.banner}></img>
+          <div className={styles.paragraphType4}>
+            <h2 className={styles.title}>Clarea se spécialise dans l’épilation définitive.</h2>
+            <div className={styles.paragraphType4}>
+              <p className={styles.texteblack}> Grâce à l’électrolyse de précision et au laser, nous adaptons chaque traitement pour
+des résultats durables, sécuritaires et respectueux de votre peau.
+              </p>
+              <div className={styles.containerRdv}>
+                <RDV></RDV>
+              </div>
+              
+            </div>
+          </div>
+        <div className={styles.paragraphType1}>
+            <p id="Elec" className={styles.texte}> 
+              Bien qu’une seule de ces technologies puisse suffire, leur combinaison peut
+              accélérer le traitement et améliorer les résultats à long terme. La meilleure
+              approche est définie lors de votre consultation.
+            </p>
+            <h2 className={styles.title2}>L’électrolyse
+</h2>
+            <p className={styles.texte}>est recommandée pour :</p>
+            <ul className={styles.liste}>
+              <li>Pilosité liée à des variations hormonales (grossesse, ménopause, certaines médications ou contraceptifs);</li>
+              <li>Hirsutisme, SOPK/PCOS ou SMOP : syndrome métabolique ovarien polyendocrinien;</li>
+              <li>Transition/affirmation de genre;</li>
+              <li>Poils résistants au laser (blancs, pâles ou très fins);</li>
+              <li>Contre-indications au laser (médications, phototypes non compatibles, etc.)</li>
+              <li>Poils isolés sur des zones sensibles ou très sculptées (ex. mamelon, arcade sourcilière, etc.)</li>
+            </ul>
+            <p className={styles.texte}>
+              L’électrolyse permet de traiter chaque poil individuellement de manière
+              définitive. Chez CLAREA, l’épilateur Elite Spectrum d’Instantron est utilisé en
+              ombinaison avec un microscope chirurgical Zeiss pour un traitement d’une
+              grande précision. À l’aide d’un filament stérile, jetable et changé à chaque
+              session, la racine du poil est ciblée pour empêcher sa repousse.
+            </p>
 
-      <div style={{ width: '100%', height: '400px' }}>
-        <Maps />
+            <h2 id="Laser" className={styles.title2}>Le laser</h2>
+            <p className={styles.texte}>est idéal pour :</p>
+            <ul className={styles.liste}>
+              <li>Réduire rapidement la pilosité sur les grandes zones</li>
+              <li>Poils foncés sur peau claire à moyennement foncée</li>
+              <li>Diminuer la densité avant un traitement d’électrolyse </li>
+              <li>Transition ou affirmation de genre</li>
+              <li>Folliculites et poils incarnés</li>
+              <li>Irritation suite au rasage ou à l’épilation à la cire</li>
+            </ul>
+            <p className={styles.texte}>
+              Le laser traite simultanément un grand nombre de poils, réduisant rapidement la densité
+              et la repousse, grâce à la technologie LightSheer de Lumenis, un laser diode adapté
+              aux phototypes 1 à 4 selon l’échelle de Fitzpatrick. 
+            </p>
+        </div>
+        
+          <div className={styles.section1}>
+            <div id="APropos" className={styles.paragraphType2}>
+              <h2 className={styles.title}>À PROPOS</h2>
+              <p className={styles.texteblack}>J’ai développé une approche à la fois minutieuse et
+                bienveillante, axée sur le confort et la confiance.
+                Chaque séance est adaptée aux besoins du corps et
+                au rythme de la personne. Mon objectif est d’offrir un
+                espace où l’on se sent en sécurité, écouté et
+                accompagné vers des résultats durables.
+                 </p>
+            </div>
+            <div className={styles.main}>
+              <img src="Pascale.jpg" alt="Logo Electrolyse" className={styles.logo} />
+              <label className={styles.quote}>Pascale Legault, électrolyste certifiée</label>
+            </div>
+               <p className={styles.texteblack}>L’initiative de CLAREA – Épilation définitive a
+                débuté en janvier 2023, et mon installation à la
+                Clinique Néva depuis le 1er décembre 2025
+                marque une étape importante dans cette évolution. Je
+                suis vraiment emballée d’intégrer un milieu aussi
+                positif, inclusif et chaleureux, qui reflète
+                parfaitement ma vision et contribue à rehausser la
+                qualité de l’expérience que j’offre à ma clientèle.
+                </p>
+                <img src="salle_traitement.jpg" alt="Logo Electrolyse" className={styles.logo} />
+          </div>
+          <div className={styles.paragraphType1}>
+            <h2 id="FAQ" className={styles.title2}>Questions fréquentes</h2>
+
+            <Faq></Faq>
+          
+            <h2 id="Tarifs" className={styles.title2}>Tarifs</h2>
+            <h2 className={styles.title3}>Électrolyse au microscope</h2>
+            
+            <table className={styles.tableau}>
+  <thead>
+    <tr>
+      <th className={styles.listItemHeader}>Durée du traitement</th>
+      <th className={styles.listItemHeader}>Prix</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td className={styles.listItem}>15 min</td>
+      <td className={styles.listItem}>50$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>30 min</td>
+      <td className={styles.listItem}>70$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>45 min</td>
+      <td className={styles.listItem}>90$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>60 min</td>
+      <td className={styles.listItem}>110$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>90 min</td>
+      <td className={styles.listItem}>150$</td>
+    </tr>
+  </tbody>
+  </table>
+            <h2 className={styles.title3}>Épilation au laser</h2>
+            <table className={styles.tableau}>
+  <thead>
+    <tr>
+      <th className={styles.listItemHeader}>Zone</th>
+      <th className={styles.listItemHeader}>Prix</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td className={styles.listItem}>
+        <div>Petite zone</div>
+        <div className={styles.texteblack}>
+          (ex : lèvre supérieure, menton, favoris, ligne du nombril…)
+        </div>
+      </td>
+      <td className={styles.listItem}>50$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>
+        <div>Zone moyenne</div>
+        <div className={styles.texteblack}>
+          (ex : nuque, cou, aisselles, bikini classique…)
+        </div>
+      </td>
+      <td className={styles.listItem}>90$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>
+        <div>Grande zone</div>
+        <div className={styles.texteblack}>
+          (ex : visage complet + cou, demi-jambes, bikini intégral, épaules…)
+        </div>
+      </td>
+      <td className={styles.listItem}>125$</td>
+    </tr>
+
+    <tr>
+      <td className={styles.listItem}>
+        <div>Très grande zone</div>
+        <div className={styles.texteblack}>
+          (ex : jambes complètes, dos, torse, etc.)
+        </div>
+      </td>
+      <td className={styles.listItem}>165$</td>
+    </tr>
+  </tbody>
+</table>
+
+            <p className={styles.texteSous}>La consultation est obligatoire, gratuite et sans engagement pour les nouveaux clients.</p>
+            <p className={styles.texteItal}>*Les tarifs peuvent varier selon la zone, la durée ou la nature du soin. Certains
+              traitements peuvent être refusés à la discrétion de l’électrolyste.
+            </p>
+        </div>
+
+
+      <div id="Contact" className={styles.paragraphType3}>
+        <h2 className={styles.title2}>Coordonnées</h2>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>CLAREA est située à la </span> 
+          <span className={styles.infoLink} href="https://www.cliniqueneva.com/">Clinique Néva</span>
+          <span className={styles.infoDesc}>, au </span> 
+          <span className={styles.infoLink} href="https://www.google.com/maps/place/1121+Rue+de+Bellechasse,+Montréal,+QC+H2S+1Y5/@45.5368223,-73.6007689,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc9196632bd8e8b:0xa4f58f43cfb19c9e!8m2!3d45.5368223!4d-73.5981886!16s%2Fg%2F11nntq80_f?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D">1121 Rue de Bellechasse, Montréal, QC H2S 1Y5</span>
+        </p>
+        <h2 className={styles.title2}>Rendez-vous</h2>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>Les plages horaires habituelles sont les lundis et jeudis de 17 h à 21 h, ainsi que les samedis de 10 h à 18 h.</span>
+        </p>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>Tous les traitements sont obligatoirement précédés d’une consultation
+gratuite. Un dépôt remboursable ou transférable à un autre rendez-vous peut
+être demandé afin de confirmer la réservation.</span>
+        </p>
+
+        <Maps></Maps>
+        <p className={styles.texteGrand}>
+          <span className={styles.infoDesc}>Tous les rendez-vous doivent être pris directement sur la plateforme
+          GOrendezvous en cliquant sur le bouton ci-dessous. Pour toute question,
+          vous pouvez également communiquer avec moi par courriel :</span>
+          <Link className={styles.infoLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</Link>
+        </p>
+      <div className={styles.containerRdv}>
+        <RDV></RDV>
+       </div>
       </div>
-    </div>
+
+    </main>
+    <footer className={styles.footer}>
+        <Link className={styles.FooterLink} href="mailto:clarea.epilation@gmail.com" >clarea.epilation@gmail.com</Link>
+        <div className={styles.colone}>
+          
+          <label className={styles.FooterText}>© 2026 Clarea · </label>
+          <Link className={styles.FooterLink} href="/Confidentialite">Politique de confidentialité</Link>
+
+        </div>
+    </footer>
+  </div>
   );
 }
