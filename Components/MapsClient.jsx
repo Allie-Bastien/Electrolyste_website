@@ -17,13 +17,15 @@ const defaultCenter = {
   lng: -73.9030592,
 };
 
-const Maps = () => {
+const MapsClient = () => {
   const [selectedPlace, setSelectedPlace] = useState(null);
+
   const mapRef = useRef(null);
   const markersRef = useRef([]);
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
+    googleMapsApiKey:
+      process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
     libraries: ['marker'],
   });
 
@@ -43,36 +45,45 @@ const Maps = () => {
   };
 
   useEffect(() => {
-    if (!isLoaded || !mapRef.current) return;
+    if (!isLoaded || !mapRef.current) {
+      return;
+    }
+
+    if (
+      !window.google ||
+      !window.google.maps ||
+      !window.google.maps.marker
+    ) {
+      console.error('Google Advanced Marker library was not loaded.');
+      return;
+    }
 
     const AdvancedMarkerElement =
       window.google.maps.marker.AdvancedMarkerElement;
 
-    if (!AdvancedMarkerElement) {
-      console.error(
-        'AdvancedMarkerElement could not be loaded. Make sure the marker library is enabled.'
-      );
-      return;
-    }
-
-    // Remove old markers
+    // Remove existing markers
     markersRef.current.forEach((marker) => {
       marker.map = null;
     });
 
     markersRef.current = [];
 
-    // Create new Advanced Markers
     markers.forEach((markerData) => {
       const markerElement = document.createElement('div');
 
-      markerElement.style.width = '32px';
-      markerElement.style.height = '32px';
-      markerElement.style.backgroundColor = '#268249';
-      markerElement.style.border = '3px solid white';
-      markerElement.style.borderRadius = '50%';
-      markerElement.style.boxShadow = '0 2px 6px rgba(0,0,0,0.3)';
-      markerElement.style.cursor = 'pointer';
+      markerElement.innerHTML = `
+        <div
+          style="
+            width: 32px;
+            height: 32px;
+            background: #268249;
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            cursor: pointer;
+          "
+        ></div>
+      `;
 
       markerElement.addEventListener('click', () => {
         setSelectedPlace(markerData);
@@ -103,8 +114,7 @@ const Maps = () => {
   if (loadError) {
     return (
       <div>
-        <p>Google Maps failed to load.</p>
-        <p>Check your API key and Google Cloud configuration.</p>
+        Google Maps failed to load.
       </div>
     );
   }
@@ -141,4 +151,4 @@ const Maps = () => {
   );
 };
 
-export default Maps;
+export default MapsClient;

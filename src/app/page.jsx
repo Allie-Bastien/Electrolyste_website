@@ -3,8 +3,16 @@ import Entete from "../../Components/Entete";
 import RDV from "../../Components/RDV";
 import Faq from "../../Components/Faq";
 import Link from "next/link";
-import Maps from "../../Components/Maps";
 import NotFound from "../../Components/NotFound";
+import dynamic from 'next/dynamic';
+
+const Maps = dynamic(
+  () => import('../../components/MapsClient'),
+  {
+    ssr: false,
+    loading: () => <p>Loading map...</p>,
+  }
+);
 
 
 export const metadata = {
