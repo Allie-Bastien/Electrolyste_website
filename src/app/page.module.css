@@ -433,7 +433,6 @@ a.secondary {
 
 .footer {
   display: flex;
-  width: 60%;
   align-self: left;
   justify-content: space-between;
   margin-left: 20px;
