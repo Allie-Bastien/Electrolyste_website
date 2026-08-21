@@ -47,7 +47,6 @@ export const metadata = {
 export default function Home() {    
   return (
       <div>
-      <h1>Clarea</h1>
 
       <div style={{ width: '100%', height: '400px' }}>
         <Maps />
